@@ -1,0 +1,256 @@
+/*143*/
+html {
+  color: #e6e6e6;
+  font-family: 'Oswald';
+}
+body {
+  font-family: 'Oswald';
+  background-color: #2b2b2b;
+}
+header {
+  background-color: #fff;
+}
+.logo {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding-right: 0;
+  margin-right: 0;
+}
+.navbar {
+
+  margin-bottom: 0;
+  border: 0;
+}
+#slideshow {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#slideshow img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.trailer_main > img {
+  margin-top: 2.5em;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-size: 100% auto;
+}
+.slider {
+  display: block;
+  max-width: 100%;
+  height: 34.81em;
+}
+.sec2 {
+  height: auto;
+  background-color: #eeeae2;
+  padding-bottom: 1em;
+}
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.place {
+  padding-bottom: 0.5em;
+}
+h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.8em;
+  font-family: 'Oswald';
+  text-align: center;
+  color: #339999;
+}
+h2 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: 'Oswald';
+  text-align: center;
+  color: #e8ae47;
+}
+.nav li a {
+  font-family: 'Oswald';
+  color: #414042;
+  font-weight: 400;
+}
+.list-unstyled {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.list-unstyled li {
+  font-family: 'Oswald';
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.footer {
+  background-color: #ffffff;
+  bottom: 0;
+}
+.text-muted {
+  margin: 4.25em 0;
+  padding-left: 0.5em;
+  vertical-align: middle;
+}
+.text-muted a {
+  color: #555555;
+}
+.place {
+  padding-left: 0.5em;
+}
+.info-color {
+  background-color: #7a98a0;
+  height: auto;
+}
+.info-color .list-unstyled li {
+  color: #f7f7f7;
+  letter-spacing: 0.07em;
+}/*
+@media only screen and (min-device-with: 480px) {
+  .slider {
+    height: 24.8em;
+  }
+  .navbar {
+    margin-bottom: 0;
+    border: 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .navbar {
+    margin-bottom: 0;
+    border: 0;
+  }
+  .sec2 {
+    width: 100%;
+    height: auto;
+    background-color: #eeeae2;
+  }
+  .slider {
+    height: 10.6em;
+  }
+  .nav li a {
+    font-family: 'Oswald';
+    color: #414042;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+  h1 {
+    font-size: 1.7em;
+    line-height: 1.7;
+    font-weight: 700;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  .list-unstyled li {
+    font-family: 'Oswald';
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 0;
+    border: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    margin-bottom: 0;
+    border: 0;
+  }
+  .sec2 {
+    width: 100%;
+    height: auto;
+    background-color: #eeeae2;
+  }
+  .slider {
+    height: 10.6em;
+  }
+  h1 {
+    font-size: 1.7em;
+    line-height: 1.7;
+    font-weight: 700;
+    padding-top: 0.5em;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  .iframe2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .list-unstyled li {
+    font-family: 'Oswald';
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .navbar {
+    margin-top: 5em;
+    margin-bottom: 0;
+    border: 0;
+  }
+  .slider {
+    height: 24.9em;
+  }
+  .iframe2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .navbar {
+    margin-top: 5em;
+    margin-bottom: 0;
+    border: 0;
+  }
+  .slider {
+    min-height: 32.25em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    margin-top: 5em;
+    margin-bottom: 0;
+    border: 0;
+  }
+  /*
+    .slider{
+        min-height: 32.25em;
+    }*/
+}
+@media only screen and (min-width: 20em) and (min-width: 768px) {
+  .slider {
+    height: 25em;
+  }
+}
+@media only screen and (min-width: 20em) and (min-width: 991px) {
+  .slider {
+    height: 32.25em;
+  }
+}
+@media only screen and (min-width: 20em) and (min-width: 1199px) {
+  .slider {
+    height: 35em;
+  }
+}/*
