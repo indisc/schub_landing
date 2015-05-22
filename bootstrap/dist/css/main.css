@@ -10,6 +10,37 @@ body {
 header {
   background-color: #fff;
 }
+#back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 3;
+  display: none;
+  float: right;
+}
+#back-top a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background-color: #33363b;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -webkit-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  -ms-transition: background-color 0.15s;
+}
+#back-top a:hover {
+  text-decoration: none;
+  background-color: #555;
+}
 .container {
   padding-left: 0;
   padding-right: 0;
@@ -126,8 +157,7 @@ a > .logo {
   height: 34.81em;
 }
 .three_things {
-  background-image: url(../dist/img/noisy/noisy.png);
-  background-repeat: repeat;
+  background-color: #fff;
 }
 .sec2 {
   height: auto;
@@ -180,9 +210,6 @@ iframe {
   line-height: 2em;
 }
 .bg-playground {
-  background-image: url(../dist/img/turner_playground_pattern.png);
-  background-repeat: repeat;
-  background-size: cover;
   background-color: #b7c3ca;
   width: 100%;
   height: 200vw;
@@ -201,9 +228,9 @@ iframe {
   padding: 1em 1.5em 0 1.5em;
 }
 .turner_comes {
-  background-color: #698891;
+  background-color: #fff;
   width: 100%;
-  height: 140vw;
+  height: 130vw;
 }
 h2 {
   margin: 0;
@@ -215,7 +242,56 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #c1d13a;
+  color: #333;
+}
+.turner_comes_text {
+  font-size: 1.1em;
+  padding-left: 1.5em;
+}
+.turner_comes_text li {
+  line-height: 1.8em;
+  color: #000;
+  letter-spacing: 0.03em;
+}
+.buy-turner {
+  min-width: 100%;
+}
+.turner_img {
+  background-image: url('../img/package_turner.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150vw;
+  background-size: cover;
+}
+.text_headline {
+  font-family: 'oswald';
+  font-size: 1.5em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.turner_img > ul {
+  list-style-type: none;
+}
+.yellow {
+  color: #E5AA46;
+}
+span {
+  color: #9ea78b;
+}
+.gray {
+  color: #6a6a6a;
+}
+.cyan {
+  color: #00C5ED;
+}
+.grab-button {
+  float: right;
+  margin-top: 20em;
+  width: 53%;
+  height: auto;
 }
 .footer {
   background-color: #ffffff;
@@ -240,14 +316,6 @@ h2 {
 .info-color .list-unstyled li {
   color: #f7f7f7;
   letter-spacing: 0.07em;
-}
-.player-wrapper {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #eee;
-  padding-left: 1em;
 }
 /*
 

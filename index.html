@@ -90,9 +90,9 @@
             </section>
             <section class="three_things container">
             	<div class="col-sm-6 col-md-4 distance-inner">
-                        <div class="thumbnail">
-                        	<h1 class="loop">The '808' First five Entries in Google Search Maschine </h1>
-                            <img src="bootstrap/dist/img/808.png" alt="EIGHTZEROEIGHT">
+                        <div>
+                        	<h1 class="loop">CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT.</h1>
+                            <img class="img-responsive" src="bootstrap/dist/img/Turner_multi.png" alt="Turner_Multi">
                           	<div class="caption-p">
                                 <p>
                                 Roland TR-808 | http://www.turnertv.de | Mr. Turner - Meister des Lichts | http://www.turnerconstruction.com/ | https://www.turners.co.nz/
@@ -101,20 +101,9 @@
                     	</div>
                 </div>
                 <div class="col-sm-6 col-md-4 distance-inner">
-                        <div class="thumbnail">
+                        <div>
                         	<h1 class="loop">The 'Turner' First five Entries in Google Search Maschine </h1>
-                            <img src="bootstrap/dist/img/Blue.png" alt="BLUE">
-                          	<div class="caption-p">
-                                <p>
-                                William Turner | Eardwulf wird um 808 neuerlich König von Northumbria | Nokia 808 PureView | Roland MC-808 | 808s & Heartbreak
-                               </p>
-                        	</div>
-                    	</div>
-                </div>
-                <div class="col-sm-6 col-md-4 distance-inner">
-                        <div class="thumbnail">
-                        	<h1 class="loop">CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT. </h1>
-                            <img src="bootstrap/dist/img/grey_final.png" alt="gray">
+                            <img class="img-responsive" src="bootstrap/dist/img/turner_multi_1.png" alt="BLUE">
                           	<div class="caption-p">
                                 <p>
                                 William Turner | Eardwulf wird um 808 neuerlich König von Northumbria | Nokia 808 PureView | Roland MC-808 | 808s & Heartbreak
@@ -211,31 +200,51 @@
                 <h2 class="turner">
                     TURNER COMES WITH
                 </h2>
-                <div class="turner_comes_text">
-                    <ul class="list-unstyled">
+                <div class="">
+                    <ul class="list-unstyled turner_comes_text">
                         <li>
-                            
+                            1) SEPERATE VOLUME FOR SLICE MODE
                         </li>
                         <li>
-                            
+                            2) 13 DIFFERENT TONE SCLAES AND MODI
                         </li>
                         <li>
-                            
+                            3) ENVELOPE-GENERATOR FOR: volume, filter, pitch
                         </li>
                         <li>
-                            
+                            4) SAMPLE START SEQUENCER
                         </li>
                         <li>
-                            
+                            5) STUTTER FX
+                        </li>
+                        <li>
+                            6) SHUFFLE, 18 DIFFERENT TEMPI
+                        </li>
+                        <li>
+                            7) REVERB; DELAY
+                        </li>
+                        <li>
+                            8) FINE TUNE, STEREO SPREAD
+                        </li>
+                        <li>
+                            9) RANDOM STEP GENERATOR
                         </li>
                     </ul>
                 </div>
-                <img id="overview" class="img-responsive"src="bootstrap/dist/img/turnercomeswith.png" height="489" width="1050" alt="">
             </section>
-            <section class="container">
-                <a href="https://sturmsounds.cartloom.com/cart/quickbuy/112491" target="blank">
-                    <img id="shop" class="img-responsive" src="bootstrap/dist/img/shop_container.png" height="440" width="1050" alt="">
-                </a>
+            <!-- buy turner -->
+            <section class="container buy-turner">
+                <div class="turner_img">
+                    <ul class="text_headline list-unstyle">
+                        <li class="yellow">It´s time to <span>Turn</span></li>
+                        <li class="gray">sequence your samples</li>
+                        <li class="cyan">make instant loops!</li>
+
+                    </ul>
+                    <a href="https://sturmsounds.cartloom.com/cart/quickbuy/112491" target="blank">
+                        <img class="grab-button" src="bootstrap/dist/img/grabitnow.png" alt="Grab it Now" />
+                    </a>
+                </div>    
             </section>
             <section class="info-color">
                 <div class="row">
@@ -273,6 +282,9 @@
                 <div class="col-sm-2 col-md-2">
                 </div>
         </footer>
+         <div id="back-top">
+                <a href="#top" title="<?php _e('Scroll to top', 'lbprojects'); ?>">&uarr;</a>
+            </div>
     </main>
 
 		<!-- fade mobile -->
@@ -291,7 +303,7 @@
             </script>
 
 
-        <!-- fade -->
+        <!-- fade desktop --> 
             <script>
 
                         $("#slideshow > div:gt(0)").hide();
@@ -307,7 +319,31 @@
             </script>
 
 
-
+            // Smooth scroll to top
+            <script>
+            
+            $(document).ready(function(){
+            // Fade in scroll button
+            $(function(){
+                $(window).scroll(function(){
+                if ($(this).scrollTop() > 100){
+                    $('#back-top').fadeIn();
+                } else{
+                    $('#back-top').fadeOut();
+                }
+            });
+ 
+            // Scroll body to top on click
+            $('#back-top a').click(function(){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+                    });
+                });
+            });
+            </script>
+            <!--
             <script>
                  $(document).ready(function() {
         // Alle internen Links ausae�hlen
@@ -323,7 +359,7 @@
             // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und erg�nzt die URL
             }, 2000 , function (){location.hash = ziel;});
        });
-            </script>
+            </script>-->
         <!-- jQuery -->
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 

@@ -41,7 +41,8 @@ gulp.task('html', function(){
 gulp.task('watch', function(){
 	gulp.watch('bootstrap/less/*.less', ['less']);
 	gulp.watch(['*.html'], ['html']);
-	gulp.watch(['bootstrap/dist/*.css'], ['css'])
+	gulp.watch(['bootstrap/dist/*.css'], ['css']);
+	gulp.watch('bootstrap/dist/css/*.css', ['minify-css'])
 });
 
 gulp.task('default', ['less','webserver', 'watch', 'minify-css']);
