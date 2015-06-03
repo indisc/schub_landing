@@ -11,13 +11,16 @@
         <!--<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">-->
         <link href="bootstrap/dist/css/main.css" rel="stylesheet">
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
         <!--
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/fonts/MyFontsWebfontsKit.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/dist/webfont/font.css">
+        
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <meta name="HandheldFriendly" content="true">
-        -->
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,18 +30,19 @@
         <![endif]-->
 
         <script src="jquery/dist/jquery.min.js"></script>
+
         <!-- Bootstrap JavaScript -->
 
     </head>
     <body>
-        <main class="container">
+        <main class="container-fluid">
             <header class="color">
-                <div class="row ">
-                    <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
                         <a href="http://www.sturmsounds-electro.com">
                             <img class="logo img-responsive" src="bootstrap/dist/img/logo.svg" alt="logo"></a>
                     </div>
-                    <nav class="col-md-5 navbar navbar-default" role="navigation">
+                    <nav class="col-sm-5 col-md-9 navbar navbar-default" role="navigation">
                     <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -65,7 +69,7 @@
                 </div>
             </header>
             <!--Slider  class ersatz img-mobile-->
-            <section>
+            <section class="container-fluid">
                 <div class="visible-xs img_mobile">
 					<div id="slideshow_mobile" class="trailer_mobile">
 						<div>
@@ -77,88 +81,87 @@
                 	</div>
                 </div>
                 <!--Slider Desktop-->
-                <div class="hidden-xs slider">
-                    <div id="slideshow" class="trailer_main">
-                        <div>
-                            <img src="bootstrap/dist/img/beatturner.png" class="img-responsive" alt="Its Time to TURN">
+                <div class="hidden-xs row">
+                    <div id="header_img">
+                        <div class="col-md-6 place-pic">                            
+                            <picture >
+                                <img class="img-responsive thumb" src="bootstrap/dist/img/THUMB1.jpg" alt="">
+                            </picture>
                         </div>
-                        <div>
-                            <img src="bootstrap/dist/img/meloturner.png" class="img-responsive" alt="Turner Control">
+                        <article class="col-md-6 place_thumb3">
+                            <h1 class="headline">
+                                CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT
+                            </h1>
+                            <h2 class="head-text">
+                                <span class="turner">
+                                    Turner
+                                </span>
+                                <span class="mk">
+                                    MK 2 
+                                </span>
+                                <span class="instant">
+                                - instant loop machine
+                                </span>
+                            </h2>
+                            </hgroup>
+                            <div class="placer">
+                                <div id="circle_play"></div>
+                                <p class="watch">watch trailer</p>
                         </div>
+                        </article>
                     </div>
                 </div>
             </section>
-            <section class="three_things container">
-            	<div class="col-sm-6 col-md-4 distance-inner">
-                        <div>
-                        	<h1 class="loop">CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT.</h1>
-                            <img class="img-responsive" src="bootstrap/dist/img/Turner_multi.png" alt="Turner_Multi">
-                          	<div class="caption-p">
-                                <p>
-                                Roland TR-808 | http://www.turnertv.de | Mr. Turner - Meister des Lichts | http://www.turnerconstruction.com/ | https://www.turners.co.nz/
-                               </p>
-                        	</div>
-                    	</div>
-                </div>
-                <div class="col-sm-6 col-md-4 distance-inner">
-                        <div>
-                        	<h1 class="loop">The 'Turner' First five Entries in Google Search Maschine </h1>
-                            <img class="img-responsive" src="bootstrap/dist/img/turner_multi_1.png" alt="BLUE">
-                          	<div class="caption-p">
-                                <p>
-                                William Turner | Eardwulf wird um 808 neuerlich König von Northumbria | Nokia 808 PureView | Roland MC-808 | 808s & Heartbreak
-                               </p>
-                        	</div>
-                    	</div>
+            <section class="container-fluid monster">
+            	<div class="distance-inner row">
+                        <div class="centered">
+                            <hgroup class="multimonster">
+                                <h1 class="loop">INTERACTIVE MULTIMONSTER</h1>
+                                <h2 class="loop2">SAMPLE SLICER // BEAT MACHINE // REMIX TOOL</h2>
+                            </hgroup>
+                            <img class="img-responsive" src="bootstrap/dist/img/THUMB2.jpg" alt="Turner_Multi">
+                        </div>
                 </div>
             </section>
             <!-- video-->
-            <section class="sec2">
-                <div class="row ">
-                    <div class="col-md-6 center-block">
-                        <h1 class="loop">
-                            CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT.
-                        </h1>
-                    </div>
-                </div>
-                <div>
-                    <div id="demo" class="embed-responsive-item">
-                        <iframe src="//player.vimeo.com/video/115339312"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="row ">
-                            <div class="col-md-6 center-block">
-                         <ul class="list-unstyled create_loop">
-                             <li>LOAD UP TO 127 SAMPLES IN EACH SEQUENCER</li>
-                             <li>10 SEQUNECERTYPES OPEN NEW WAYS OF SAMPLE- SEQENCING</li>
-                             <li>CREATE LOOPS OR REMIX EXISTING IDEAS</li>
-                             <li>MADE FOR INSPIRING MUSICAL EXPERIENCES</li>
+            <section class="container-fluid">
+                <div id="second_bg_img">
+                    <article class="col-md-5">
+                        <hgroup class="head-remix">
+                            <h1 class="head-tool">
+                                Interactive Multimonster Sample
+                            </h1>
+                            <h1 class="head-tool">
+                                Sample Slicer Beat Machine
+                            </h1>
+                            <h1 class="head-tool">
+                                Remix Tool
+                            </h1>
+                        </hgroup>
+                        <div class="placer place-remix">
+                            <div id="circle_play"></div>
+                            <p class="watch">watch<span class="turner_remix">Turner</span>in Action</p>
+                        </div>
+                        <ul class="list-unstyled list-rmx">
+                            <li>10 SEQUNECERTYPES OPEN NEW WAYS OF SAMPLE-SEQENCING</li>
+                            <li>CREATE LOOPS OR REMIX EXISTING IDEAS</li>
+                            <li>MADE FOR INSPIRING MUSICAL EXPERIENCES</li>
                         </ul>
-                    </div>
-                </div>
-                <div>
-                <div id="demo" class="embed-responsive-item ">
-                    <iframe src="//player.vimeo.com/video/115341859" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-                </div>
-                    <h1 class="loop">
-                        TUTORIALS
-                    </h1>
-                <div class="place">
-                    <div id="demo" class="embed-responsive-item ">
-                        <iframe src="//player.vimeo.com/video/115335444" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="place">
-                    <div id="demo" class="embed-responsive-item">
-                        <iframe src="//player.vimeo.com/video/116061430"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </article>
+                    <div class="col-md-6 place-pic">                            
+                            <picture >
+                                <img class="img-responsive thumb3" src="bootstrap/dist/img/THUMB3.jpg" alt="">
+                            </picture>
                     </div>
                 </div>
             </section>
-            <!--playground-->
-            <section class="bg-playground">
-                <div class="playground-text">
-                    <ul class="list-unstyled">
+            <!--The unit-->
+            <section class="row the_unit">
+                <div class="col-md-5">
+                    <h1 class="headline_unit">
+                        THE UNIT OF OPPERTUNITY
+                    </h1>
+                    <ul class="list-unstyled the_unit_text">
                         <li>
                             1) sound choose, dice, fader for select/slice mode
                         </li>
@@ -178,7 +181,7 @@
                             6) stutter: hold step, step position, tempo of a held step
                         </li>
                         <li>
-                            7) fx: sum for delay an dreverb sends
+                            7) fx: sum for delay and reverb sends
                         </li>
                         <li>
                             8) filtermenu: lp, bp, hp filter, filter env, resonance
@@ -187,63 +190,107 @@
                             9) volume envelope, attack, decay, sustain, release
                         </li>
                         <li>
-                            10)sample start function for each sequencer
+                            10) sample start function for each sequencer
                         </li>
                     </ul>
                 </div>
-                <div class="playground">
-                    <img class="img-responsive" src="bootstrap/dist/img/playgroung.png" height="442" width="560" alt="Playground">
+                <div class="col-md-6 thumb_playground">
+                    <img class="img-responsive" src="bootstrap/dist/img/THUMB4Playground.jpg" alt="Playground">
                 </div>
             </section>
-            <!--turner comes width-->
-            <section class="turner_comes">
-                <h2 class="turner">
-                    TURNER COMES WITH
-                </h2>
-                <div class="">
-                    <ul class="list-unstyled turner_comes_text">
-                        <li>
-                            1) SEPERATE VOLUME FOR SLICE MODE
-                        </li>
-                        <li>
-                            2) 13 DIFFERENT TONE SCLAES AND MODI
-                        </li>
-                        <li>
-                            3) ENVELOPE-GENERATOR FOR: volume, filter, pitch
-                        </li>
-                        <li>
-                            4) SAMPLE START SEQUENCER
-                        </li>
-                        <li>
-                            5) STUTTER FX
-                        </li>
-                        <li>
-                            6) SHUFFLE, 18 DIFFERENT TEMPI
-                        </li>
-                        <li>
-                            7) REVERB; DELAY
-                        </li>
-                        <li>
-                            8) FINE TUNE, STEREO SPREAD
-                        </li>
-                        <li>
-                            9) RANDOM STEP GENERATOR
-                        </li>
-                    </ul>
+            <!-- Turner comes With -->
+            <section class="container-fluid">
+                <div id="third_bg_img">
+                    <article class="col-md-9">
+                        <h1 class="head-tool turner-head">
+                            Turner comes with
+                        </h1>
+                        <ul class="list-unstyled list-turner">
+                            <li>
+                                A HUGE SAMPLE LIBRARY OF URBAN ELECTRONIC SOUNDS
+                            </li>
+                            <li>
+                                10 x 32 STEP SEQUENCER FOR: sample select, pitch, sample start, filter, panorama, saturation, bitcrusher, delay send, reverb send
+                            </li>
+                            <li>
+                                SEPERATE VOLUME FOR SLICE MODE
+                            </li>
+                            <li>
+                                13 DIFFERENT TONE SCLAES AND MODI
+                            </li>
+                            <li>
+                                ENVELOPE-GENERATOR FOR: volume, filter, pitch
+                            </li>
+                            <li>
+                                SAMPLE START SEQUENCER
+                            </li>
+                            <li>
+                                STUTTER FX
+                            </li>
+                            <li>
+                                SHUFFLE, 18 DIFFERENT TEMPI
+                            </li>
+                            <li>
+                                REVERB; DELAY
+                            </li>
+                            <li>
+                                FINE TUNE, STEREO SPREAD FOR EACH TRACK
+                            </li>
+                            <li>
+                                RANDOM STEP GENERATOR
+                            </li>
+                            <li>
+                                VARIOUS RANDOM OPTIONS FOR GLOBAL PARAMETERS AND SPECIFIC PARAMETERS 
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
             <!-- buy turner -->
-            <section class="container buy-turner">
-                <div class="turner_img">
-                    <ul class="text_headline list-unstyle">
-                        <li class="yellow">It´s time to <span>Turn</span></li>
-                        <li class="gray">sequence your samples</li>
-                        <li class="cyan">make instant loops!</li>
-
-                    </ul>
+            <section class="container-fluid buy-turner">
+                <div class="col-md-6 turner-img">
                     <a href="https://sturmsounds.cartloom.com/cart/quickbuy/112491" target="blank">
-                        <img class="grab-button" src="bootstrap/dist/img/grabitnow.png" alt="Grab it Now" />
+                        <img class="img-reponsive package" src="bootstrap/dist/img/Verpackung.png" alt="Package">
+                        <img class="img-reponsive buy-now" src="bootstrap/dist/img/buynow_new.png" alt="buy now">
                     </a>
+                </div>
+                <div class=" col-md-6">
+                    <h1 class="head-system">
+                        SYSTEM PREFERENCES
+                    </h1>
+                    <ul class="list-unstyled list-system">
+                        <li>FULL VERSION OF KONTAKT 5.5</li>
+                        <li>MAC OS 10.7 / WIN 7 </li>
+                    </ul>
+                    <h1 class="head-sound">
+                        SOUND Package
+                    </h1>
+                    <ul class="list-unstyled list-system">
+                        <li>
+                            DARK ACCENTS 
+                        </li>
+                        <li>
+                            kicks I 127
+                        </li>
+                        <li>
+                            snare/clap      I   127
+                        </li>
+                        <li>
+                            hihat               I   127
+                        </li>
+                        <li>
+                            percussion      I   127
+                        </li>
+                        <li>
+                            chords          I   127
+                        </li>
+                        <li>
+                            amto                I   127
+                        </li>
+                        <li>
+                            bass                I   127
+                        </li>
+                    </ul>
                 </div>    
             </section>
             <section class="info-color">
@@ -282,42 +329,10 @@
                 <div class="col-sm-2 col-md-2">
                 </div>
         </footer>
-         <div id="back-top">
+        <div id="back-top">
                 <a href="#top" title="<?php _e('Scroll to top', 'lbprojects'); ?>">&uarr;</a>
-            </div>
+        </div>
     </main>
-
-		<!-- fade mobile -->
-            <script>
-
-                        $("#slideshow_mobile > div:gt(0)").hide();
-
-                        setInterval(function(){
-                            $('#slideshow_mobile > div:first')
-                                .fadeOut(2000)
-                                .next()
-                                .fadeIn(3000)
-                                .end()
-                                .appendTo('#slideshow_mobile');
-                        }, 5000);
-            </script>
-
-
-        <!-- fade desktop --> 
-            <script>
-
-                        $("#slideshow > div:gt(0)").hide();
-
-                        setInterval(function(){
-                            $('#slideshow > div:first')
-                                .fadeOut(1500)
-                                .next()
-                                .fadeIn(1500)
-                                .end()
-                                .appendTo('#slideshow');
-                        }, 5000);
-            </script>
-
 
             // Smooth scroll to top
             <script>
@@ -343,23 +358,7 @@
                 });
             });
             </script>
-            <!--
-            <script>
-                 $(document).ready(function() {
-        // Alle internen Links ausae�hlen
-        $('a[href*=#]').bind("click", function(event) {
-            // Standard Verhalten unterdr�cken
-            event.preventDefault();
-            // Linkziel in Variable schreiben
-            var ziel = $(this).attr("href");
-            //Scrollen der Seite animieren, body ben�tigt f�r Safari
-            $('html,body').animate({
-                //Zum Ziel scrollen (Variable)
-                scrollTop: $(ziel).offset().top
-            // Dauer der Animation und Callbackfunktion die nach der Animation aufgerufen wird, sie stellt das Standardverhalten wieder her und erg�nzt die URL
-            }, 2000 , function (){location.hash = ziel;});
-       });
-            </script>-->
+            
         <!-- jQuery -->
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'seagle';
+  src: url('seagle.eot'); /* IE9 Compat Modes */
+  src: url('seagle.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('seagle.woff') format('woff'), /* Modern Browsers */
+       url('seagle.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('seagle.svg#8c6bab8cec0d4246438dcc39dd90796d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
