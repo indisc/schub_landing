@@ -171,7 +171,4 @@
   };
 })(jQuery);
 
-$(function () {
-  $.fn.YouTubePopup.defaults.fullscreen = 127;
-  $.fn.YouTubePopup.defaults.color1 = 'CCCCCC';
-});
+

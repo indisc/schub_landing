@@ -1,5 +1,10 @@
 
 @media only screen and (min-width: 1900px){
+    
+    body{
+        font-size: 150%;
+    }
+
     a>.logo{
     padding-top: @padding-t-b-logo;
     padding-bottom: 2.1em;
@@ -37,19 +42,19 @@
     }
 
     #header_img{
-        background: url('@{imagePath}bg1.png');
+        background: url('../../img/bg1.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 45vw;
+        height: 64em;
     }
 
     #second_bg_img{
-        background: url('@{imagePath}bg2.png');
+        background: url('../../img/bg2.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 111vh;
+        height: 64em;
     }
     
     //first header
@@ -59,7 +64,7 @@
 
     .place-pic{
         padding-top: 12em;
-        padding-left: 3.5em;
+        padding-left: @pad-left;
     }
     .place_thumb3{
         padding-left: 3em;
@@ -89,24 +94,44 @@
         font-size: 1.5em;
         color: #fff;
     }
+     .placer{
+        padding-top: 5em;
+        margin-left: 15%;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+
     //interactive Multimonster
     .monster{
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 64em;
         background-color: #fff;
+    }
+    //safari img center
+    .middle, img, .img-responsive{
+        margin: 0 auto;
     }
     .multimonster{
         padding-bottom: 3em;
     }
+      .watch{
+        padding-top: 1.1em;
+        padding-left: 1.5em;
+        font-size: 2em;
+        color: #fff;
+        letter-spacing: 0.03em;
+    }
 
     .loop{
-        font-size: 5.7em;
-        line-height: 1.3em;
+        font-size: 3.7em;
+        line-height: 1em;
     }
     .loop2{
         text-align: center;
-        font-size: 3.8em;
+        font-size: 1.8em;
     }
 
     //Remix-tool
@@ -121,7 +146,7 @@
     }
     .head-remix{
         padding-top: 9em;
-        padding-left: 8em;
+        padding-left: @pad-left;
     }
 
     //place play button remixtool
@@ -139,7 +164,7 @@
         padding-top: 3.3em;
         color: #fff;
         font-size: 2em;
-        padding-left: 4em;
+        padding-left: @pad-left;
     }
      //The Unit
     .the_unit{
@@ -150,11 +175,11 @@
     .headline_unit{
         font-size: 4em;
         padding-top: 1.5em;
-        padding-left: 2em;
+        padding-left: @pad-left;
     }
     .the_unit_text{
         font-size: 1.9em;
-        padding-left: 4.2em;
+        padding-left: @pad-left;
         li{
             line-height: 1.4em;
             color: #000;
@@ -165,18 +190,18 @@
     }
     //turnercomeswith
     #third_bg_img{
-        background-image: url('@{imagePath}bg3.png');
+        background-image: url('../../img/bg3.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 45vw;
+        height: 64em;
     }
     //typo
     .turner-head{
         font-size: 4.5em;
         color: #fff;
         text-transform: uppercase;
-        padding-left: 2em;
+        padding-left: @pad-left;
         padding-top: 1.5em;
     }
     //list typo
@@ -184,7 +209,7 @@
         padding-top: 1.3em;
         color: #fff;
         font-size: 1.8em;
-        padding-left: 4.95em;
+        padding-left: @pad-left;
         li{
             line-height: 1.6em;
         }
@@ -192,12 +217,12 @@
     //Turner buy
     .buy-turner{
         width: 100%;
-        height: 120vh;
+        height: 64em;
         background-color: #fff;
     }
     .turner-img{
         padding-top: 8em;
-        padding-left: 10em;
+        padding-left: @pad-left-package;
         .buy-now{
             padding-top: 22em;
             padding-left: 2em;
@@ -208,13 +233,90 @@
     .head-system{
         font-size: 4em;
         padding-top: 1.3em;
+
     }
     .list-system{
         font-size: 1.7em;
         padding-top: 0.5em;
+        padding-left: 0em;
     }
     .head-sound{
         font-size: 4em;
 
     }
+        //footer
+        footer{
+            height: 8em;
+        background-color: #2d3540;
+    }
+    .text-muted{
+        font-size: 1.5em;
+        padding-top: 2em;
+        padding-left: 3em;
+    }
+    .facebook{
+        background-image: url('../../img/facebook.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .twitter{
+        background-image: url('../../img/twitter.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+
+    .icons{
+        font-size: 2.3em;
+        padding-top: 1.5em;
+        li{
+            padding-left: 0.5em;
+            text-align: center;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: center;
+        align-content: center;
+        }
+    }
+     #circle_icon{
+        width: 1.2em;
+        height: 1.2em;
+        border: 0.7em solid white;
+        position: relative;
+        border-radius: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: center;
+        align-content: center;
+
+    }
+    footer>.list-unstyled{
+        padding-bottom: 0;
+    }
+   
+
 }
+
+
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+    /* Safari and Chrome, if Chrome rule needed */
+        {
+            #circle_icon{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 0.7em solid white;
+        position: relative;
+        border-radius: 1em;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: center;
+        align-items: center; 
+    }
+        
+    }

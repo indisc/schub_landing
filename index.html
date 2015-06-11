@@ -2,7 +2,7 @@
 <html lang="deu">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Sturmsounds-Electro</title>
 
@@ -11,15 +11,21 @@
         <!--<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">-->
         <link href="bootstrap/dist/css/main.css" rel="stylesheet">
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-        <!--
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>-->
+        <!-- font din and seagle-->
         <link rel="stylesheet" type="text/css" href="bootstrap/fonts/MyFontsWebfontsKit.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/dist/webfont/font.css">
+        <!--font awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         
+        <!--popup youtube-->
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
         
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 
         <meta name="HandheldFriendly" content="true">
+
+        <!-- script youtube-->
+        
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -82,9 +88,9 @@
                 </div>
                 <!--Slider Desktop-->
                 <div class="hidden-xs row">
-                    <div id="header_img">
+                    <div id="header_img" class="header_img">
                         <div class="col-md-6 place-pic">                            
-                            <picture >
+                            <picture>
                                 <img class="img-responsive thumb" src="bootstrap/dist/img/THUMB1.jpg" alt="">
                             </picture>
                         </div>
@@ -105,7 +111,11 @@
                             </h2>
                             </hgroup>
                             <div class="placer">
-                                <div id="circle_play"></div>
+                                <div class="play">
+                                    <a class="youtube" href="https://www.youtube.com/watch?v=ffftoVUQF-Y" title="jQuery YouTube Popup Player Plugin TEST">
+                                        <img class="img-responsive mk2" src="bootstrap/img/play_button.svg" alt="play button">
+                                    </a>
+                                </div>
                                 <p class="watch">watch trailer</p>
                         </div>
                         </article>
@@ -116,10 +126,12 @@
             	<div class="distance-inner row">
                         <div class="centered">
                             <hgroup class="multimonster">
-                                <h1 class="loop">INTERACTIVE MULTIMONSTER</h1>
+                                <h1 class="loop">INTERACTIVE MULTI TALENT</h1>
                                 <h2 class="loop2">SAMPLE SLICER // BEAT MACHINE // REMIX TOOL</h2>
                             </hgroup>
-                            <img class="img-responsive" src="bootstrap/dist/img/THUMB2.jpg" alt="Turner_Multi">
+                            <picture class="middle">
+                                <img class="img-responsive" src="bootstrap/dist/img/THUMB2.jpg" alt="Turner_Multi">
+                            </picture>
                         </div>
                 </div>
             </section>
@@ -139,7 +151,11 @@
                             </h1>
                         </hgroup>
                         <div class="placer place-remix">
-                            <div id="circle_play"></div>
+                            <div class="play">
+                                    <a class="youtube" href="https://www.youtube.com/watch?v=Kjy_GRJP8zQ" title="jQuery YouTube Popup Player Plugin TEST">
+                                        <img class="img-responsive mk2" src="bootstrap/img/play_button.svg" alt="play button">
+                                    </a>
+                            </div>
                             <p class="watch">watch<span class="turner_remix">Turner</span>in Action</p>
                         </div>
                         <ul class="list-unstyled list-rmx">
@@ -148,16 +164,16 @@
                             <li>MADE FOR INSPIRING MUSICAL EXPERIENCES</li>
                         </ul>
                     </article>
-                    <div class="col-md-6 place-pic">                            
+                    <div class="col-md-6 place-right">                            
                             <picture >
-                                <img class="img-responsive thumb3" src="bootstrap/dist/img/THUMB3.jpg" alt="">
+                                <img class="img-responsive thumb" src="bootstrap/dist/img/THUMB3.jpg" alt="">
                             </picture>
                     </div>
                 </div>
             </section>
             <!--The unit-->
             <section class="row the_unit">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <h1 class="headline_unit">
                         THE UNIT OF OPPERTUNITY
                     </h1>
@@ -199,7 +215,7 @@
                 </div>
             </section>
             <!-- Turner comes With -->
-            <section class="container-fluid">
+            <section id="overview" class="container-fluid">
                 <div id="third_bg_img">
                     <article class="col-md-9">
                         <h1 class="head-tool turner-head">
@@ -247,7 +263,7 @@
                 </div>
             </section>
             <!-- buy turner -->
-            <section class="container-fluid buy-turner">
+            <section id="shop" class="container-fluid buy-turner">
                 <div class="col-md-6 turner-img">
                     <a href="https://sturmsounds.cartloom.com/cart/quickbuy/112491" target="blank">
                         <img class="img-reponsive package" src="bootstrap/dist/img/Verpackung.png" alt="Package">
@@ -263,104 +279,109 @@
                         <li>MAC OS 10.7 / WIN 7 </li>
                     </ul>
                     <h1 class="head-sound">
-                        SOUND Package
+                        SOUND PACKAGE
                     </h1>
-                    <ul class="list-unstyled list-system">
-                        <li>
-                            DARK ACCENTS 
-                        </li>
-                        <li>
-                            kicks I 127
-                        </li>
-                        <li>
-                            snare/clap      I   127
-                        </li>
-                        <li>
-                            hihat               I   127
-                        </li>
-                        <li>
-                            percussion      I   127
-                        </li>
-                        <li>
-                            chords          I   127
-                        </li>
-                        <li>
-                            amto                I   127
-                        </li>
-                        <li>
-                            bass                I   127
-                        </li>
-                    </ul>
+                    <h2 class="dark_accents">
+                        DARK ACCENTS
+                    </h2>
+                    <div class="col-md-2 list-system">
+                        <p>
+                            snare/clap
+                        </p>
+                        <p>
+                            hihat
+                        </p>
+                        <p>
+                            percussion
+                        </p>
+                        <p>
+                            chords
+                        </p>
+                        <p>
+                            amto
+                        </p>
+                        <p>
+                            bass
+                        </p>
+                    </div>
+                    <div class="col-md-1 list-system">
+                        <p>
+                            |
+                        </p>
+                        <p>
+                            |
+                        </p>
+                        <p>
+                            |
+                        </p>
+                        <p>
+                            |
+                        </p>
+                        <p>
+                            |
+                        </p>
+                        <p>
+                            |
+                        </p>
+                    </div>
+                    <div class="col-md-1 list-system">
+                        <p>
+                            127
+                        </p>
+                        <p>
+                            127
+                        </p>
+                        <p>
+                            127
+                        </p>
+                        <p>
+                            127
+                        </p>
+                        <p>
+                            127
+                        </p>
+                        <p>
+                            127
+                        </p>
+                    </div>
                 </div>    
             </section>
-            <section class="info-color">
-                <div class="row">
-                    <div class="col-xs-2"></div>
-                        <div class="col-xs-8">
-                            <ul class="list-unstyled">
-                            <li>
-                                full Kontakt 5.1 required
-                            </li>
-                            <li>
-                                for Win XP / Win 7 / Win 8 or OS X 10.6 / 10.7 / 10.8 / 10.9 / Yosemite
-                            </li>
-                            </ul>
-                        <div class="col-xs-1"></div>
-                    </div>
-                </div>
-            </section>
-            
             <footer class="footer">
-                <div class="col-sm-4 col-md-4">
-                </div>
-                <div class="col-sm-5 col-md-5">
+                <div class="col-sm-3 col-md-3">
                     <p class="text-muted">
-                        <a href="http://sturmsounds-electro.com/imprint.html">
+                        2015@ STURMSOUNDS-ELECTRO
+                        <!--<a href="http://sturmsounds-electro.com/imprint.html">
                             IMPRESSUM |
-                        </a>
+                        </a>-->
                         <a href="mailto:info@sturmsounds.com?subject=feedback" "email me" target="blank">
                             info@sturmsounds.com
                         </a>
-                        <a href="#start_logo" class="place">
-                            BACK TO TOP
-                        </a>
                     </p>
                 </div>
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-3 col-md-3">
                 </div>
-        </footer>
+                <div class="col-md-6">
+                    <div class="col-xs-1 icons">
+                        <i class="facebook"></i>
+                    </div>
+                    <div class="col-xs-1 icons">
+                        <i class="twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         <div id="back-top">
                 <a href="#top" title="<?php _e('Scroll to top', 'lbprojects'); ?>">&uarr;</a>
         </div>
     </main>
 
-            // Smooth scroll to top
-            <script>
-            
-            $(document).ready(function(){
-            // Fade in scroll button
-            $(function(){
-                $(window).scroll(function(){
-                if ($(this).scrollTop() > 100){
-                    $('#back-top').fadeIn();
-                } else{
-                    $('#back-top').fadeOut();
-                }
-            });
- 
-            // Scroll body to top on click
-            $('#back-top a').click(function(){
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 800);
-                return false;
-                    });
-                });
-            });
-            </script>
-            
+        <script src="bootstrap/js/popup.js"></script>
+                   
         <!-- jQuery -->
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="bootstrap/js/backtop.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.youtubepopup.js"></script>
 
     </body>
 </html>
