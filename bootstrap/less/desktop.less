@@ -41,7 +41,7 @@
         padding: 0 3em 0 2em;
     }
 
-    #header_img{
+    .header_img{
         background: url('../../img/bg1.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -58,8 +58,15 @@
     }
     
     //first header
-    .thumb{
+    #second_bg_img{
+    	position: relative;
+    	.thumb{
+    	position: absolute;
+    	top: 25%;
+    	transform: translateY(10%);
         max-width: 110%;
+        top: 10em;
+    	}
     }
 
     .place-pic{

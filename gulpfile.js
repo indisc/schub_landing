@@ -3,6 +3,10 @@ var less = require('gulp-less');
 var livereload = require('gulp-livereload');
 var connect = require('gulp-connect');
 var minifyCss = require('gulp-minify-css');
+var LessPluginCleanCSS = require('less-plugin-clean-css');
+    LessPluginAutoPrefix = require('less-plugin-autoprefix');
+    cleancss = new LessPluginCleanCSS({ advanced: true });
+    autoprefix= new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
 
 //gulp webserver
 gulp.task('webserver', function(){
@@ -19,6 +23,13 @@ gulp.task('less', function(){
 		.pipe(gulp.dest('bootstrap/dist/css/'))
 		.pipe(connect.reload());
 });
+
+gulp.src('bootstrap/less/main.less')
+  .pipe(less({
+    plugins: [autoprefix, cleancss]
+  }))
+  .pipe(gulp.dest('bootstrap/dist/css/'));
+
 
 //livereload
 gulp.task('css', function(){
