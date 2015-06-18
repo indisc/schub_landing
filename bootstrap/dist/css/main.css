@@ -137,6 +137,33 @@ a > .logo {
   width: 100%;
   height: auto;
 }
+#slideshow_mobile {
+  position: relative;
+  max-width: 100%;
+  height: 87vw;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+#slideshow_mobile img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.trailer_mobile img {
+  max-width: 100%;
+  height: 40vh;
+  padding: 0;
+  background-size: 100% auto;
+}
+.slider {
+  display: block;
+  max-width: 100%;
+  height: 34.81em;
+}
 .monster {
   background-color: #fff;
   height: 33em;
@@ -506,32 +533,11 @@ footer > .list-unstyled {
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.1em;
+    font-size: 1.8em;
+    padding-left: 6.5rem;
   }
   .list-turner li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 1.3em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.6em;
-  }
-  .list-turner1 li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 1.3em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.6em;
-  }
-  .list-turner1 li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
+    line-height: 1.6em;
   }
   .buy-turner {
     width: 100%;
@@ -817,21 +823,11 @@ footer > .list-unstyled {
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.1em;
+    font-size: 1.4em;
+    padding-left: 5em;
   }
   .list-turner li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 1.3em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.6em;
-  }
-  .list-turner1 li {
-    line-height: 1.2em;
+    line-height: 1.4em;
     letter-spacing: 0.03em;
   }
   .buy-turner {
@@ -844,14 +840,14 @@ footer > .list-unstyled {
     padding-bottom: 4em;
   }
   .turner-img .buy-now {
-    margin-top: 19em;
+    padding-top: 18em;
     padding-left: 1em;
   }
   .package {
-    max-height: 32em;
+    max-height: 85vh;
   }
   .buy-now {
-    max-height: 22em;
+    max-height: 72vh;
   }
   .head-system {
     font-size: 3.5em;
@@ -1079,20 +1075,10 @@ footer > .list-unstyled {
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.1em;
+    font-size: 1.7em;
+    padding-left: 4.2em;
   }
   .list-turner li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 1.3em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.6em;
-  }
-  .list-turner1 li {
     line-height: 1.2em;
     letter-spacing: 0.03em;
   }
@@ -1106,14 +1092,14 @@ footer > .list-unstyled {
     padding-bottom: 4em;
   }
   .turner-img .buy-now {
-    margin-top: 19em;
+    padding-top: 18em;
     padding-left: 1em;
   }
   .package {
-    max-height: 32em;
+    max-height: 85vh;
   }
   .buy-now {
-    max-height: 22em;
+    max-height: 72vh;
   }
   .head-system {
     font-size: 3.5em;
@@ -1193,13 +1179,13 @@ footer > .list-unstyled {
   }
 }
 /* landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   a > .logo {
     padding-top: 2em;
     padding-bottom: 2.1em;
     padding-left: 2.2em;
     display: block;
-    min-width: 140%;
+    max-width: 100%;
     height: auto;
   }
   .nav {
@@ -1241,8 +1227,7 @@ footer > .list-unstyled {
     height: 34.563em;
   }
   .thumb {
-    max-width: 115%;
-    padding-left: 2em;
+    max-width: 110%;
   }
   .place-pic {
     padding-top: 6em;
@@ -1289,7 +1274,7 @@ footer > .list-unstyled {
   }
   .watch {
     padding-top: 1.1em;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #fff;
     letter-spacing: 0.03em;
   }
@@ -1304,17 +1289,6 @@ footer > .list-unstyled {
     padding-bottom: 3em;
   }
   .loop {
-    font-size: 4.5em;
-    line-height: 1.3em;
-  }
-  .loop2 {
-    text-align: center;
-    font-size: 2.2em;
-  }
-  .multimonster {
-    padding-bottom: 3em;
-  }
-  .loop {
     font-size: 5.7em;
     line-height: 1.3em;
   }
@@ -1322,60 +1296,45 @@ footer > .list-unstyled {
     text-align: center;
     font-size: 3.8em;
   }
-  .middle,
-  img,
-  .img-responsive {
-    margin: 0 auto;
-  }
-  .middle img {
-    max-width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .head-tool {
-    font-size: 2.15em;
+    font-size: 2.9em;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     line-height: 0.6em;
   }
   .head-remix {
-    padding-top: 4em;
-    padding-left: 2em;
+    padding-top: 7em;
+    padding-left: 6em;
   }
   .place-remix {
-    padding-left: 0;
+    padding-left: 3em;
   }
   .turner_remix {
     padding-left: 0.3em;
     padding-right: 0.3em;
     font-family: 'seagle';
-    font-size: 1em;
+    font-size: 1.2em;
     color: #acd15f;
   }
   .list-rmx {
     padding-top: 2.3em;
     color: #fff;
-    font-size: 1.1em;
-    padding-left: 2em;
-  }
-  .place-right {
-    padding-top: 6em;
-    padding-right: 4em;
+    font-size: 1.8em;
+    padding-left: 3.6em;
   }
   .the_unit {
     background-color: #fff;
     width: 100%;
   }
   .headline_unit {
-    font-size: 2.4em;
+    font-size: 3.4em;
     padding-top: 1.5em;
-    padding-left: 1em;
+    padding-left: 2em;
   }
   .the_unit_text {
-    font-size: 1.2em;
-    padding-left: 2em;
+    font-size: 1.7em;
+    padding-left: 4.2em;
     padding-bottom: 4em;
   }
   .the_unit_text li {
@@ -1383,40 +1342,30 @@ footer > .list-unstyled {
     color: #000;
   }
   .thumb_playground {
-    margin-top: 9em;
-    margin-left: 3em;
+    margin-top: 11em;
+    padding-right: 3em;
   }
   #third_bg_img {
     background-image: url('../../img/bg3_ipad.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 34.563em;
   }
   .turner-head {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #fff;
     text-transform: uppercase;
-    padding-left: 1em;
+    padding-left: 2em;
     padding-top: 1.5em;
   }
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.1em;
+    font-size: 1.7em;
+    padding-left: 4.2em;
   }
   .list-turner li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 4.4em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 0.5em;
-  }
-  .list-turner1 li {
     line-height: 1.2em;
     letter-spacing: 0.03em;
   }
@@ -1426,11 +1375,11 @@ footer > .list-unstyled {
   }
   .turner-img {
     padding-top: 8em;
-    padding-left: 4em;
+    padding-left: 10em;
     padding-bottom: 4em;
   }
   .turner-img .buy-now {
-    margin-top: 22em;
+    padding-top: 18em;
     padding-left: 1em;
   }
   .package {
@@ -1441,7 +1390,7 @@ footer > .list-unstyled {
   }
   .head-system {
     font-size: 3.5em;
-    padding-top: 2.1em;
+    padding-top: 1.3em;
   }
   .dark_accents {
     font-size: 1.8em;
@@ -1464,105 +1413,132 @@ footer > .list-unstyled {
     padding-top: 2em;
     padding-left: 3em;
   }
-  .text-muted a {
-    padding-top: 0em;
+  .fa-facebook {
+    color: #000;
+    padding-right: 0.6em;
   }
-  .fb-size {
-    min-width: 2em;
-  }
-  .twitter-size {
-    min-width: 2em;
+  .fa-twitter {
+    color: #000;
+    padding-right: 0.8em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
   }
   .icons {
-    display: inline-block;
+    font-size: 1.7em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     padding-top: 1.5em;
-    padding-left: 11em;
+  }
+  .icons li {
+    padding-left: 0.5em;
+  }
+  #circle_icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.7em solid white;
+    position: relative;
+    border-radius: 1em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
   }
   footer > .list-unstyled {
     padding-bottom: 0;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+/* portrait and landscape */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   a > .logo {
     padding-top: 2em;
     padding-bottom: 2.1em;
     padding-left: 2.2em;
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
   }
-  .navbar {
-    margin-top: 3em;
+  .nav {
+    float: right;
+    padding-top: 2.3em;
+    padding-right: 5em;
   }
-  .navbar-header {
-    float: none;
+  .nav li a {
+    font-family: 'DINCondensed-Regular';
+    color: #494949;
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 0.02em;
+    width: 2em;
   }
-  .navbar-toggle {
-    display: block;
+  .nav > li:nth-child(1),
+  .nav > li:nth-child(2),
+  .nav > li:nth-child(3) {
+    box-sizing: border-box;
+    border-bottom: 0;
+    width: 0;
+    padding: 0 5em 0 2em;
   }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-    margin: 7.5px -15px;
-  }
-  .navbar-nav > li {
-    float: none;
-  }
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .nav > li:nth-child(1) {
+    padding: 0 3em 0 2em;
   }
   .header_img {
-    background: url('../../img/bg1_ipad_portrait.png');
+    background: url('../../img/bg1_ipad.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 55.188em;
+    height: 34.563em;
+  }
+  #second_bg_img {
+    background: url('../../img/bg2_ipad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 34.563em;
   }
   .thumb {
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 115%;
   }
   .place-pic {
-    padding-top: 4em;
+    padding-top: 6em;
+    padding-right: 3em;
+  }
+  .place_thumb3 {
+    padding-left: 4em;
   }
   .headline {
-    font-size: 3em;
+    font-size: 2.2em;
     color: #fff;
-    letter-spacing: 0.02em;
-    padding-top: 1em;
-    width: 70%;
-    margin: 0 auto;
+    letter-spacing: 0.03em;
+    padding-top: 3em;
+    width: 68%;
   }
   .head-text {
     color: #fff;
     letter-spacing: 0.03em;
-    padding-top: 3em;
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
   }
   .turner {
     font-family: 'seagle';
-    font-size: 2.8em;
+    font-size: 1em;
     color: #acd15f;
   }
   .mk {
-    font-size: 2.8em;
+    font-size: 1em;
     color: #9b9b9d;
   }
   .instant {
-    font-size: 2.1em;
+    font-size: 0.8em;
     color: #fff;
   }
   .placer {
     padding-top: 3em;
-    margin-left: 14%;
+    margin-left: 10%;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1573,7 +1549,7 @@ footer > .list-unstyled {
   }
   .watch {
     padding-top: 0.3em;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #fff;
     letter-spacing: 0.03em;
   }
@@ -1603,56 +1579,45 @@ footer > .list-unstyled {
     margin-left: auto;
     margin-right: auto;
   }
-  #second_bg_img {
-    background: url('../../img/bg2_ipad.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 34.563em;
-  }
   .head-tool {
-    font-size: 2.15em;
+    font-size: 2.9em;
     font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     line-height: 0.6em;
   }
   .head-remix {
-    padding-top: 4em;
-    padding-left: 2em;
+    padding-top: 7em;
+    padding-left: 6em;
   }
   .place-remix {
-    padding-left: 1em;
+    padding-left: 3em;
   }
   .turner_remix {
     padding-left: 0.3em;
     padding-right: 0.3em;
     font-family: 'seagle';
-    font-size: 1em;
+    font-size: 1.2em;
     color: #acd15f;
   }
   .list-rmx {
     padding-top: 2.3em;
     color: #fff;
-    font-size: 1.1em;
-    padding-left: 2em;
-  }
-  .place-right {
-    padding-top: 6em;
-    padding-right: 4em;
+    font-size: 1.8em;
+    padding-left: 3.6em;
   }
   .the_unit {
     background-color: #fff;
     width: 100%;
   }
   .headline_unit {
-    font-size: 2.4em;
+    font-size: 3.4em;
     padding-top: 1.5em;
-    padding-left: 1em;
+    padding-left: 2em;
   }
   .the_unit_text {
-    font-size: 1.2em;
-    padding-left: 2em;
+    font-size: 1.7em;
+    padding-left: 4.2em;
     padding-bottom: 4em;
   }
   .the_unit_text li {
@@ -1660,40 +1625,30 @@ footer > .list-unstyled {
     color: #000;
   }
   .thumb_playground {
-    margin-top: 9em;
-    margin-left: 3em;
+    margin-top: 11em;
+    padding-right: 3em;
   }
   #third_bg_img {
     background-image: url('../../img/bg3_ipad.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 34.563em;
   }
   .turner-head {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #fff;
     text-transform: uppercase;
-    padding-left: 1em;
+    padding-left: 2em;
     padding-top: 1.5em;
   }
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
-    font-size: 1.5em;
-    padding-left: 1.7em;
+    font-size: 1.7em;
+    padding-left: 4.2em;
   }
   .list-turner li {
-    line-height: 1.2em;
-    letter-spacing: 0.03em;
-  }
-  .list-turner1 {
-    padding-top: 4.4em;
-    color: #fff;
-    font-size: 1.5em;
-    padding-left: 0.5em;
-  }
-  .list-turner1 li {
     line-height: 1.2em;
     letter-spacing: 0.03em;
   }
@@ -1703,11 +1658,11 @@ footer > .list-unstyled {
   }
   .turner-img {
     padding-top: 8em;
-    padding-left: 4em;
+    padding-left: 10em;
     padding-bottom: 4em;
   }
   .turner-img .buy-now {
-    margin-top: 22em;
+    padding-top: 18em;
     padding-left: 1em;
   }
   .package {
@@ -1718,7 +1673,7 @@ footer > .list-unstyled {
   }
   .head-system {
     font-size: 3.5em;
-    padding-top: 2.1em;
+    padding-top: 1.3em;
   }
   .dark_accents {
     font-size: 1.8em;
@@ -1741,19 +1696,41 @@ footer > .list-unstyled {
     padding-top: 2em;
     padding-left: 3em;
   }
-  .text-muted a {
-    padding-top: 0em;
+  .fa-facebook {
+    color: #000;
+    padding-right: 0.6em;
   }
-  .fb-size {
-    min-width: 2em;
-  }
-  .twitter-size {
-    min-width: 2em;
+  .fa-twitter {
+    color: #000;
+    padding-right: 0.8em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
   }
   .icons {
-    display: inline-block;
+    font-size: 1.7em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     padding-top: 1.5em;
-    padding-left: 11em;
+  }
+  .icons li {
+    padding-left: 0.5em;
+  }
+  #circle_icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.7em solid white;
+    position: relative;
+    border-radius: 1em;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
   }
   footer > .list-unstyled {
     padding-bottom: 0;
