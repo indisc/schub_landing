@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/dist/webfont/font.css">
         <!--font awesome -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        
+        <script src="bootstrap/dist/js/modernizer.js"></script>
         <!--popup youtube-->
         <!--<link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />-->
         
@@ -48,7 +48,7 @@
                         <a href="http://www.sturmsounds-electro.com">
                             <img class="logo img-responsive" src="bootstrap/dist/img/logo.svg" alt="logo"></a>
                     </div>
-                    <nav class="col-sm-5 col-md-9 navbar navbar-default" role="navigation">
+                    <nav class="col-sm-6 col-md-9 navbar navbar-default" role="navigation">
                     <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -76,29 +76,20 @@
             </header>
             <!--Slider  class ersatz img-mobile-->
             <section class="container-fluid">
-                <div class="visible-xs img_mobile">
-					<div id="slideshow_mobile" class="trailer_mobile">
-						<div>
-	                    	<img src="bootstrap/dist/img/_beatturner_mobile.png" class="img-responsive" alt="Beatturner_mobile">
-						</div>
-						<div>
-							<img src="bootstrap/dist/img/turner_mobile_2.png" class="img-responsive" alt="turner-mobile">
-						</div>
-                	</div>
-                </div>
+                
                 <!--Slider Desktop-->
-                <div class="hidden-xs row">
+                <div class="row">
                     <div class="header_img">
-                        <div class="col-md-6 place-pic">                            
+                        <div class="col-lg-6 col-md-6 col-sm-10 place-pic">                            
                             <picture>
                                 <img class="img-responsive thumb" src="bootstrap/dist/img/THUMB1.jpg" alt="">
                             </picture>
                         </div>
-                        <article class="col-md-6 place_thumb3">
+                        <article class="col-md-4 col-sm-5 place_thumb3">
                             <h1 class="headline">
                                 CREATING LOOPS NEVER WAS SO EASY AND EFFECTIVE IN KONTAKT
                             </h1>
-                            <h2 class="head-text">
+                            <div class="head-text">
                                 <span class="turner">
                                     Turner
                                 </span>
@@ -108,7 +99,7 @@
                                 <span class="instant">
                                 - instant loop machine
                                 </span>
-                            </h2>
+                            </div>
                             </hgroup>
                             <div class="placer">
                                 <div class="play">
@@ -124,8 +115,7 @@
                 </div>
             </section>
             <section class="container-fluid monster">
-            	<div class="distance-inner row">
-                        <div class="centered">
+                <div class="centered">
                             <hgroup class="multimonster">
                                 <h1 class="loop">INTERACTIVE MULTI TALENT</h1>
                                 <h2 class="loop2">SAMPLE SLICER // BEAT MACHINE // REMIX TOOL</h2>
@@ -133,10 +123,9 @@
                             <picture class="middle">
                                 <img class="img-responsive" src="bootstrap/dist/img/THUMB2.jpg" alt="Turner_Multi">
                             </picture>
-                        </div>
                 </div>
             </section>
-            <!-- video-->
+            <!--Interactive Mulittalent-->
             <section class="container-fluid">
                 <div id="second_bg_img">
                     <article class="col-md-5">
@@ -150,20 +139,27 @@
                             <h1 class="head-tool">
                                 Remix Tool
                             </h1>
-                        </hgroup>
-                        <div class="placer place-remix">
+                        
+                        <div class="place-remix">
                             <div class="play">
                                     <a class="youtube" href="https://www.youtube.com/watch?v=Kjy_GRJP8zQ" title="jQuery YouTube Popup Player Plugin TEST">
                                         <img class="img-responsive mk2" src="bootstrap/img/play_button.svg" alt="play button">
                                     </a>
                             </div>
-                            <p class="watch">watch<span class="turner_remix">Turner</span>in Action</p>
-                        </div>
-                        <ul class="list-unstyled list-rmx">
-                            <li>10 SEQUNECERTYPES OPEN NEW WAYS OF SAMPLE-SEQENCING</li>
-                            <li>CREATE LOOPS OR REMIX EXISTING IDEAS</li>
-                            <li>MADE FOR INSPIRING MUSICAL EXPERIENCES</li>
-                        </ul>
+                                <p class="watch">watch<span class="turner_remix">Turner</span>in Action</p>
+                            </div>
+                            <ul class="list-unstyled list-rmx">
+                                <li>
+                                    10 SEQUNECERTYPES OPEN NEW WAYS OF SAMPLE-SEQENCING
+                                </li>
+                                <li>
+                                    CREATE LOOPS OR REMIX EXISTING IDEAS
+                                </li>
+                                <li>
+                                    MADE FOR INSPIRING MUSICAL EXPERIENCES
+                                </li>
+                            </ul>
+                        </hgroup>
                     </article>
                     <div class="col-md-7 place-right">                            
                             <picture >
@@ -211,16 +207,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6 thumb_playground">
-                    <img class="img-responsive" src="bootstrap/dist/img/THUMB4Playground.jpg" alt="Playground">
+                <div class="col-md-7 thumb_playground">
+                    <img class="img-responsive thumb3" src="bootstrap/dist/img/THUMB4Playground.jpg" alt="Playground">
                 </div>
             </section>
             <!-- Turner comes With -->
-            <section id="overview" class="container-fluid">
+            <section>
                 <div id="third_bg_img">
-                    <article class="col-md-9">
-                        <h1 class="head-tool turner-head">
-                            Turner comes with
+                    
+                    <article class="col-md-6 turner-place">
+                        <h1 class="turner-head">
+                        Turner comes with
                         </h1>
                         <ul class="list-unstyled list-turner">
                             <li>
@@ -258,34 +255,34 @@
                             </li>
                             <li>
                                 VARIOUS RANDOM OPTIONS FOR GLOBAL PARAMETERS AND SPECIFIC PARAMETERS 
-                            </li>
+                            </li>     
                         </ul>
                     </article>
                 </div>
             </section>
             <!-- buy turner -->
             <section id="shop" class="container-fluid buy-turner">
-                <div class="col-md-7 turner-img">
+                <div class="col-md-6 turner-img">
                     <a href="https://sturmsounds.cartloom.com/cart/quickbuy/112491" target="blank">
                         <img class="img-reponsive package" src="bootstrap/dist/img/Verpackung.png" alt="Package">
-                        <img class="img-reponsive buy-now" src="bootstrap/dist/img/buynow_new.png" alt="buy now">
                     </a>
                 </div>
                 <div class="col-md-5">
-                    <h1 class="head-system">
-                        SYSTEM PREFERENCES
-                    </h1>
-                    <ul class="list-unstyled list-system">
+                    <div class="head--box">
+                        <h1 class="head-system">
+                            SYSTEM PREFERENCES
+                        </h1>
+                        <ul class="list-unstyled list-system">
                         <li>FULL VERSION OF KONTAKT 5.5</li>
                         <li>MAC OS 10.7 / WIN 7 </li>
-                    </ul>
-                    <h1 class="head-sound">
-                        SOUND PACKAGE
-                    </h1>
-                    <h2 class="dark_accents">
-                        DARK ACCENTS
-                    </h2>
-                    <div class=" col-md-2 list-system">
+                        </ul>
+                        <h1 class="head-sound">
+                            SOUND PACKAGE
+                        </h1>
+                        <h2 class="dark_accents">
+                            DARK ACCENTS
+                        </h2>
+                        <div class=" col-md-3 list-system">
                         <p>
                             snare/clap
                         </p>
@@ -304,8 +301,8 @@
                         <p>
                             bass
                         </p>
-                    </div>
-                    <div class="col-md-1 list-system">
+                        </div>
+                        <div class="col-md-1 list-system">
                         <p>
                             |
                         </p>
@@ -324,8 +321,8 @@
                         <p>
                             |
                         </p>
-                    </div>
-                    <div class="col-md-1 list-system">
+                        </div>
+                        <div class="col-md-1 list-system">
                         <p>
                             127
                         </p>
@@ -344,32 +341,43 @@
                         <p>
                             127
                         </p>
+                        </div>
                     </div>
                 </div>    
             </section>
             <footer class="footer">
-                <div class="col-sm-3 col-md-3">
-                    <p class="text-muted">
-                        2015@ STURMSOUNDS-ELECTRO
-                        <!--<a href="http://sturmsounds-electro.com/imprint.html">
-                            IMPRESSUM |
-                        </a>-->
-                        <a href="mailto:info@sturmsounds.com?subject=feedback" "email me" target="blank">
-                            info@sturmsounds.com
-                        </a>
-                    </p>
+                <div class="col-md-3 col-sm-4">
+                    <div class="text-muted">
+                        <p>
+                            2015@ STURMSOUNDS-ELECTRO
+                        </p>  
+                        <p>
+                            <a href="http://sturmsounds-electro.com/imprint.html" target="blank">
+                                IMPRESSUM
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:info@sturmsounds.com?subject=feedback" "email me" target="blank">
+                                info@sturmsounds.com
+                            </a>
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="col-sm-3 col-md-3">
-                </div>
-                <div class="col-md-6 icons">
-                    <div class="col-xs-1">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 icons">
+                    <div class="col-md-3">
                         <picture>
-                            <img class="fb-size img-responsive" src="bootstrap/img/facebook.svg" alt="facebook icon">
+                            <a href="https://www.facebook.com/pages/Sturmsounds-Virtual-Instruments/434994789925538?pnref=lhc" target="blank">
+                                <img class="fb-size img-responsive" src="bootstrap/img/facebook.svg" alt="Facebook Icon">
+                            </a>
                         </picture>
                     </div>
-                    <div class="col-xs-1">
+                    <div class="col-md-3">
                         <picture>
-                            <img class="twitter-size img-responsive" src="bootstrap/img/twitter.svg" alt="Twitter Icon">
+                            <a href="https://soundcloud.com/sturmsounds-instruments" target="blank">
+                                <img class="soundcloud-size img-responsive" src="bootstrap/img/soundcloud.svg" alt="soundcloud Icon">
+                            </a>
                         </picture>          
                     </div>
                 </div>

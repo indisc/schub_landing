@@ -32,9 +32,13 @@
 @padding-t-b-h1: 0.5em;
 
 //place left
-@pad-left: 6.5rem;
+@pad-left: 9.5rem;
 @pad-left-package: 21.5rem;
 
+
+*{
+    box-sizing: border-box;
+}
 
 html{
 
@@ -99,21 +103,27 @@ header{
 
 }
 
+@media only screen
+and (min-width: 1280px)
+and (max-width: 1980px){
 //background images
-    #header_img{
+    .header_img{
         background: url('../../img/bg1.png');
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 64em;
+        background-size: 100%;
+        display: table;
+        position: relative;
     }
+
+
 
     #second_bg_img{
         background: url('../../img/bg2.png');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: 64em;
+        display: table;
+        position: relative;
+        min-width: 100%;
     }
 
 
@@ -122,10 +132,19 @@ header{
         background-image: url('../../img/bg3.png');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: 64em;
+        min-width: 100%;
+        display: table;
+        position: relative;
     }
 
+    a>.logo{
+    padding-top: @padding-t-b-logo;
+    padding-bottom: 1em;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+}
 
 //container
 .container-fluid,.container{
@@ -141,13 +160,6 @@ header{
 }
 
 
-a>.logo{
-    padding-top: @padding-t-b-logo;
-    padding-bottom: 1em;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 //navbar toggle border
 
@@ -197,57 +209,45 @@ a>.logo{
     background-color: transparent;
 }
 
-/*
+
 .img_mobile>img{
     display: block;
  	width: 100%;
     height: auto;
 }
-*/
 
-.img_mobile{
-    display: block;
- 	width: 100%;
-    height: auto;
+.loop{
+    font-family: @baseFontFamily;
+    text-align: center;
+    color: #000;
 }
 
-
-#slideshow_mobile{
-    position: relative;
-    max-width: 100%;
-    height: 87vw;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.footer{
+    background-color: @footerbackcolor;
+    bottom: 0;
+    height: 8em;
 
 }
 
-#slideshow_mobile img{
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.text-muted{
+    padding-top: 4%;
+    padding-left: 0.5em;
+    vertical-align: middle;
 
+    a{
+        color: @footercolor;
+    }
 }
 
-.trailer_mobile  img{
-    max-width: 100%;
-    height: 40vh;
-    padding:0;
-    background-size: 100% auto;
-
+.text.muted{
+    p{
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
-
-.slider{
-    display: block;
-    max-width: 100%;
-    height: @height;
-
-}
+/*
 
 //three promise
 .monster{
@@ -273,14 +273,6 @@ iframe{
 }
 
 
-
-.loop{
-    font-family: @baseFontFamily;
-    text-align: center;
-    color: #000;
-}
-
-
 .nav {
     li{
         a{
@@ -296,8 +288,8 @@ iframe{
 }
 
 .list-unstyled{
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
     li{
         font-family: @baseFontFamily;
         font-size: @baseFontSize;
@@ -306,24 +298,10 @@ iframe{
     }
 }
 
-//create loop list
-.create_loop{
-    font-size: 1.2em;
-    li{
-        line-height: 2em;
-    }
-}
-
 
 
 //playground
 
-.bg-playground{
-    background-color: #b7c3ca;
-    width: 100%;
-    height: 200vw;
-
-}
 
 .playground-text{
         ul{
@@ -338,41 +316,9 @@ iframe{
     padding-left: 1.5em;
 }
 
-//img border
-.playground{
-    padding: 1em 1.5em 0 1.5em;
-}
 
 
 
-//turner comes with
-.the_unit{
-    background-color: #fff;
-    width: 100%;
-    height: 45vw;
-}
-
-h2{
-    margin: 0;
-}
-
-.turner{
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    font-family: @baseFontFamily;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #333;
-}
-
-.the_unit_text{
-    font-size: 1.1em;
-    padding-left: 1.5em;
-    li{
-        line-height: 1.8em;
-        color: #000;
-    }
-}
 
 
 
@@ -388,34 +334,8 @@ h2{
 
 
 
-.turner_img>ul{
-    list-style-type: none;
-}
 
 
-.yellow{
-    color: #E5AA46;
-}
-
-span{
-  color: #9ea78b;
-}
-
-.gray{
-  color: #6a6a6a;
-
-}
-
-.cyan{
-  color: #00C5ED;
-}
-
-.grab-button{
-  float: right;
-  margin-top: 20em;
-  width: 53%;
-  height: auto;  
-}
 
 
 //footer
@@ -440,17 +360,6 @@ span{
     padding-left: 0.5em;
 }
 
-.info-color{
-    background-color: @info-color;
-    height: auto;
-    .list-unstyled{
-        li{
-            color: @infoFontcolor;
-            letter-spacing: 0.07em;
-
-        }
-    }
-}
 
 footer{
         height: 8em;
@@ -473,22 +382,14 @@ footer{
             padding-left: 0.5em;
         }
     }
-     #circle_icon{
-        display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        border: 0.7em solid white;
-        position: relative;
-        border-radius: 1em;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        justify-content: center;
-        align-items: center; 
-    }
+
     footer>.list-unstyled{
         padding-bottom: 0;
     }
 
+*/
 
-      
+
+
+
+

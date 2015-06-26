@@ -1,6 +1,7 @@
-/* landscape */
-
-@media screen and (min-device-width : 768px) 
+/* landscape  ipad*/
+/*
+@media only screen 
+and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape)  {
 	 a>.logo{
@@ -8,7 +9,7 @@ and (orientation : landscape)  {
     padding-bottom: 2.1em;
     padding-left: 2.2em;
     display: block;
-    max-width: 100%;
+    min-width: 140%;
     height: auto;
     }
 
@@ -40,31 +41,36 @@ and (orientation : landscape)  {
     }
 
     .header_img{
+        position: relative;
         background: url('../../img/bg1_ipad.png');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: 34.563em;
+        dipslay: table;
+
     }
     
     #second_bg_img{
+        position: relative;
         background: url('../../img/bg2_ipad.png');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
-        height: 34.563em;
+
+
     }
 
     .thumb{
-        max-width: 110%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
     .place-pic{
-        padding-top: 6em;
-        padding-right: 3em;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 7%;
     }
     .place_thumb3{
-        padding-left: 5em;
+        padding-left: 5%;
+        padding-top: 6%;
     }
     .headline{
         font-size: 2em;
@@ -108,7 +114,7 @@ and (orientation : landscape)  {
 
     .watch{
         padding-top: 1.1em;
-        font-size: 2em;
+        font-size: 1.8em;
         color: #fff;
         letter-spacing: 0.03em;
     }
@@ -122,6 +128,19 @@ and (orientation : landscape)  {
         height: 60em;
         background-color: #fff;
     }
+
+    .multimonster{
+        padding-bottom: 3em;
+    }
+
+    .loop{
+        font-size: 4.5em;
+        line-height: 1.3em;
+    }
+    .loop2{
+        text-align: center;
+        font-size: 2.2em;
+    }
     .multimonster{
         padding-bottom: 3em;
     }
@@ -134,36 +153,52 @@ and (orientation : landscape)  {
         text-align: center;
         font-size: 3.8em;
     }
-    .thumb3{
+    
+            //safari img center
+    .middle, img, .img-responsive{
+        margin: 0 auto;
     }
+    .middle{
+        img{
+            max-width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     .head-tool{
-        font-size: 2.9em;
+        font-size: 2.15em;
         font-weight: 400;
         color: #fff;
         text-transform: uppercase;
         line-height: 0.6em;
     }
     .head-remix{
-        padding-top: 7em;
-        padding-left: 6em;
+        padding-top: 4em;
+        padding-left: 2em;
     }
 
     //place play button remixtool
     .place-remix{
-        padding-left: 3em;
+        padding-left: 0;
     }
     .turner_remix{
         padding-left: 0.3em;
         padding-right: 0.3em;
         font-family: 'seagle';
-        font-size: 1.2em;
+        font-size: 1em;
         color: #acd15f;
     }
     .list-rmx{
         padding-top: 2.3em;
         color: #fff;
-        font-size: 1.8em;
-        padding-left: 3.6em;
+        font-size: 1.1em;
+        padding-left: 2em;
+    }
+    .place-right{
+        padding-top: 6em;
+        padding-right: 4em;
     }
     //The Unit
     .the_unit{
@@ -171,13 +206,13 @@ and (orientation : landscape)  {
     width: 100%;
     }
     .headline_unit{
-        font-size: 3.4em;
+        font-size: 2.4em;
         padding-top: 1.5em;
-        padding-left: 2em;
+        padding-left: 1em;
     }
     .the_unit_text{
-        font-size: 1.7em;
-        padding-left: 4.2em;
+        font-size: 1.2em;
+        padding-left: 2em;
         padding-bottom: 4em;
         li{
             line-height: 1.2em;
@@ -185,29 +220,40 @@ and (orientation : landscape)  {
             }
         }
     .thumb_playground{
-        margin-top: 11em;
-        padding-right: 3em;
+        margin-top: 9em;
+        margin-left: 3em;
     }
     //turnercomeswith
     #third_bg_img{
+        position: relative;
         background-image: url('../../img/bg3_ipad.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         width: 100%;
-        height: 34.563em;
+
     }
     .turner-head{
-        font-size: 3.5em;
+        font-size: 2.5em;
         color: #fff;
         text-transform: uppercase;
-        padding-left: 2em;
+        padding-left: 1em;
         padding-top: 1.5em;
     }
     .list-turner{
         padding-top: 1.3em;
         color: #fff;
-        font-size: 1.7em;
-        padding-left: 4.2em;
+        font-size: 1.5em;
+        padding-left: 1.1em;
+        li{
+            line-height: 1.2em;
+            letter-spacing: 0.03em;
+        }
+    }
+    .list-turner1{
+        padding-top: 4.4em;
+        color: #fff;
+        font-size: 1.5em;
+        padding-left: 0.5em;
         li{
             line-height: 1.2em;
             letter-spacing: 0.03em;
@@ -220,10 +266,10 @@ and (orientation : landscape)  {
     }
     .turner-img{
         padding-top: 8em;
-        padding-left: 10em;
+        padding-left: 4em;
         padding-bottom: 4em;
         .buy-now{
-            padding-top: 18em;
+            margin-top: 22em;
             padding-left: 1em;
         }
     }
@@ -237,7 +283,7 @@ and (orientation : landscape)  {
     //typo buy turner
     .head-system{
         font-size: 3.5em;
-        padding-top: 1.3em;
+        padding-top: 2.1em;
     }
     .dark_accents{
         font-size: 1.8em;
@@ -262,148 +308,132 @@ and (orientation : landscape)  {
         font-size: 1.5em;
         padding-top: 2em;
         padding-left: 3em;
+        a{
+            padding-top: 0em;
+        }
     }
-    .fa-facebook{
-        color: #000;
-        padding-right: 0.6em;
+    .fb-size{
+        min-width: 2em;
+
     }
-    .fa-twitter{
-        color: #000;
-        padding-right: 0.8em;
-        display:flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        justify-content: center;
-        align-items: center;
+    .twitter-size{
+        min-width: 2em;
     }
 
 
     .icons{
-        font-size: 1.7em;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        padding-top: 1.5em;
-        li{
-            padding-left: 0.5em;
-        }
-    }
-     #circle_icon{
         display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        border: 0.7em solid white;
-        position: relative;
-        border-radius: 1em;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        justify-content: center;
-        align-items: center; 
+        padding-top: 1.5em;
+        padding-left: 11em;
     }
+
     footer>.list-unstyled{
         padding-bottom: 0;
     }
 
 }
 
-/* portrait and landscape */
-
-@media screen and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
+//ipad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+  {
 	 a>.logo{
     padding-top: @padding-t-b-logo;
     padding-bottom: 2.1em;
     padding-left: 2.2em;
     display: block;
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
     }
-
-    .nav {
-        float:right;
-        padding-top: 2.3em;
-        padding-right: 5em;
-        li{
-            a{
-                font-family: @baseFontFamily;
-                color: @fontcolor;
-                font-weight: 400;
-                font-size: 1.4em;
-                letter-spacing: 0.02em;
-                width: 2em;
-            }
-        }
-    }
     
-    .nav>li:nth-child(1), .nav>li:nth-child(2), .nav>li:nth-child(3)
-        {
-            box-sizing: border-box;
-            border-bottom: 0;
-            width: 0;
-            padding: 0 5em 0 2em;
-        }
-    .nav>li:nth-child(1){
-        padding: 0 3em 0 2em;
+    .navbar{
+        margin-top: 3em;
     }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    //navbar toggle
+
 
     .header_img{
-        background: url('../../img/bg1_ipad.png');
+        background: url('../../img/bg1_ipad_portrait.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 34.563em;
+
     }
     
-    #second_bg_img{
-        background: url('../../img/bg2_ipad.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 34.563em;
+    .thumb{
+        max-width: 80%;
+        margin: 0 auto;
     }
 
-    .thumb{
-        max-width: 115%;
+    .place_thumb3{
+        
     }
 
     .place-pic{
-        padding-top:6em;
-        padding-right: 3em;
+        padding-top: 4em;
     }
-    .place_thumb3{
-        padding-left: 4em;
-    }
+
     .headline{
-        font-size: 2.2em;
+        font-size: 3em;
         color: #fff;
-        letter-spacing: 0.03em;
-        padding-top: 3em;
-        width: 68%;
+        letter-spacing: 0.02em;
+        padding-top: 1em;
+        width: 70%;
+        margin: 0 auto;
     }
     .head-text{
         color: #fff;
         letter-spacing: 0.03em;
-        width: 100%;
+        padding-top: 3em;
+        width: 60%;
+        margin: 0 auto;
     }
     .turner{
         font-family: 'seagle';
-        font-size: 1em;
+        font-size: 2.8em;
         color: #acd15f;
     }
     .mk{
-        font-size: 1em;
+        font-size: 2.8em;
         color: #9b9b9d;
     }
     .instant{
-        font-size: 0.8em;
+        font-size: 2.1em;
         color: #fff;
     }
     
 
-    .placer{
+    .placer{p
         padding-top: 3em;
-        margin-left: 10%;
+        margin-left: 14%;
         display: flex;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -417,7 +447,7 @@ and (max-device-width : 1024px)  {
 
     .watch{
         padding-top: 0.3em;
-        font-size: 2em;
+        font-size: 1.8em;
         color: #fff;
         letter-spacing: 0.03em;
     }
@@ -451,37 +481,50 @@ and (max-device-width : 1024px)  {
             margin-right: auto;
         }
     }
+    
+    //interactive Multi Talent
+    #second_bg_img{
+        background: url('../../img/bg2_ipad.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
+    }
 
     .thumb3{
     }
     .head-tool{
-        font-size: 2.9em;
+        font-size: 2.15em;
         font-weight: 400;
         color: #fff;
         text-transform: uppercase;
         line-height: 0.6em;
     }
     .head-remix{
-        padding-top: 7em;
-        padding-left: 6em;
+        padding-top: 4em;
+        padding-left: 2em;
     }
 
     //place play button remixtool
     .place-remix{
-        padding-left: 3em;
+        padding-left: 1em;
     }
     .turner_remix{
         padding-left: 0.3em;
         padding-right: 0.3em;
         font-family: 'seagle';
-        font-size: 1.2em;
+        font-size: 1em;
         color: #acd15f;
     }
     .list-rmx{
         padding-top: 2.3em;
         color: #fff;
-        font-size: 1.8em;
-        padding-left: 3.6em;
+        font-size: 1.1em;
+        padding-left: 2em;
+    }
+    .place-right{
+        padding-top: 6em;
+        padding-right: 4em;
     }
     //The Unit
     .the_unit{
@@ -489,13 +532,13 @@ and (max-device-width : 1024px)  {
     width: 100%;
     }
     .headline_unit{
-        font-size: 3.4em;
+        font-size: 2.4em;
         padding-top: 1.5em;
-        padding-left: 2em;
+        padding-left: 1em;
     }
     .the_unit_text{
-        font-size: 1.7em;
-        padding-left: 4.2em;
+        font-size: 1.2em;
+        padding-left: 2em;
         padding-bottom: 4em;
         li{
             line-height: 1.2em;
@@ -503,29 +546,40 @@ and (max-device-width : 1024px)  {
             }
         }
     .thumb_playground{
-        margin-top: 11em;
-        padding-right: 3em;
+        margin-top: 9em;
+        margin-left: 3em;
     }
     //turnercomeswith
     #third_bg_img{
         background-image: url('../../img/bg3_ipad.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         width: 100%;
-        height: 34.563em;
+
     }
+
     .turner-head{
-        font-size: 3.5em;
+        font-size: 2.5em;
         color: #fff;
         text-transform: uppercase;
-        padding-left: 2em;
+        padding-left: 1em;
         padding-top: 1.5em;
     }
     .list-turner{
         padding-top: 1.3em;
         color: #fff;
-        font-size: 1.7em;
-        padding-left: 4.2em;
+        font-size: 1.5em;
+        padding-left: 1.7em;
+        li{
+            line-height: 1.2em;
+            letter-spacing: 0.03em;
+        }
+    }
+    .list-turner1{
+        padding-top: 4.4em;
+        color: #fff;
+        font-size: 1.5em;
+        padding-left: 0.5em;
         li{
             line-height: 1.2em;
             letter-spacing: 0.03em;
@@ -538,10 +592,10 @@ and (max-device-width : 1024px)  {
     }
     .turner-img{
         padding-top: 8em;
-        padding-left: 10em;
+        padding-left: 4em;
         padding-bottom: 4em;
         .buy-now{
-            padding-top: 18em;
+            margin-top: 22em;
             padding-left: 1em;
         }
     }
@@ -555,7 +609,7 @@ and (max-device-width : 1024px)  {
     //typo buy turner
     .head-system{
         font-size: 3.5em;
-        padding-top: 1.3em;
+        padding-top: 2.1em;
     }
     .dark_accents{
         font-size: 1.8em;
@@ -580,48 +634,28 @@ and (max-device-width : 1024px)  {
         font-size: 1.5em;
         padding-top: 2em;
         padding-left: 3em;
+        a{
+            padding-top: 0em;
+        }
     }
-    .fa-facebook{
-        color: #000;
-        padding-right: 0.6em;
+    .fb-size{
+        min-width: 2em;
+
     }
-    .fa-twitter{
-        color: #000;
-        padding-right: 0.8em;
-        display:flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        justify-content: center;
-        align-items: center;
+    .twitter-size{
+        min-width: 2em;
     }
 
 
     .icons{
-        font-size: 1.7em;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        padding-top: 1.5em;
-        li{
-            padding-left: 0.5em;
-        }
-    }
-     #circle_icon{
         display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        border: 0.7em solid white;
-        position: relative;
-        border-radius: 1em;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        justify-content: center;
-        align-items: center; 
+        padding-top: 1.5em;
+        padding-left: 11em;
     }
+
     footer>.list-unstyled{
         padding-bottom: 0;
     }
 }
-
+*/
 
