@@ -56,7 +56,7 @@ header {
   text-decoration: none;
   background-color: #555;
 }
-@media only screen and (min-width: 1280px) and (max-width: 1980px) {
+@media only screen and (min-width: 992px) and (max-width: 1980px) {
   .header_img {
     background: url('../../img/bg1.png');
     background-repeat: no-repeat;
@@ -529,7 +529,7 @@ footer{
   .turner-img {
     padding-top: 9%;
     padding-bottom: 9%;
-    padding-left: 21.5rem;
+    padding-left: 15.5rem;
   }
   .head--box {
     padding-top: 14%;
@@ -829,7 +829,7 @@ footer{
   .turner-img {
     padding-top: 9%;
     padding-bottom: 9%;
-    padding-left: 21.5rem;
+    padding-left: 15.5rem;
   }
   .head--box {
     padding-top: 14%;
@@ -877,7 +877,7 @@ footer{
     padding-bottom: 0;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   a > .logo {
     padding-top: 2em;
     padding-bottom: 2.1em;
@@ -927,76 +927,13 @@ footer{
     background-repeat: no-repeat;
     background-size: 100%;
     -moz-background-size: 100% ;
-    position: relative;
-    max-width: 100%;
-  }
-}
-/* landscape  ipad*/
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
-  a > .logo {
-    padding-top: 2em;
-    padding-bottom: 2.1em;
-    padding-left: 2.2em;
-    display: block;
-    min-width: 90%;
-    height: auto;
-  }
-  .nav {
-    float: right;
-    padding-top: 2.3em;
-  }
-  .nav li a {
-    font-family: 'DINCondensed-Regular';
-    color: #494949;
-    font-weight: 400;
-    font-size: 1.2em;
-    letter-spacing: 0.02em;
-    width: 5em;
-  }
-  /*   
-    .nav>li:nth-child(1), .nav>li:nth-child(2), .nav>li:nth-child(3)
-        {
-            box-sizing: border-box;
-            border-bottom: 0;
-            width: 0;
-            padding: 0 2.5em 0 2.5em;
-        }*/
-  .nav > li:nth-child(1) {
-    box-sizing: border-box;
-    border-bottom: 0;
-    width: 0;
-    padding: 0 2.5em 0 2.5em;
-  }
-  .nav > li:nth-child(2) {
-    box-sizing: border-box;
-    border-bottom: 0;
-    width: 0;
-    padding: 0 2.5em 0 2.5em;
-  }
-  .nav > li:nth-child(3) {
-    box-sizing: border-box;
-    border-bottom: 0;
-    width: 0;
-    padding: 0 2.5em 0 4em;
-  }
-  .nav > li:nth-child(4) {
-    box-sizing: border-box;
-    border-bottom: 0;
-    width: 0;
-    padding: 0 2.5em 0 2.5em;
-  }
-  .header_img {
-    background: url('../../img/bg1_ipad_portrait.png');
-    -moz-background-size: 100% ;
-    background-size: 100%;
-    background-repeat: no-repeat;
     position: relative;
     max-width: 100%;
     display: inline-block;
   }
   .thumb {
-    padding-top: 29%;
-    padding-bottom: 29%;
+    padding-top: 19%;
+    padding-bottom: 19%;
   }
   .place-pic {
     display: inline-block;
@@ -1147,18 +1084,19 @@ footer{
     padding-top: 21%;
     padding-bottom: 21%;
   }
+  .turner-place {
+    padding-left: 5%;
+  }
   .turner-head {
     font-size: 2.5em;
     color: #fff;
     text-transform: uppercase;
-    padding-left: 1em;
     padding-top: 1.5em;
   }
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
     font-size: 1.5em;
-    padding-left: 1.1em;
   }
   .list-turner li {
     line-height: 1.2em;
@@ -1178,17 +1116,21 @@ footer{
     width: 100%;
     background-color: #fff;
   }
+  .package {
+    max-width: 100%;
+    height: auto;
+  }
   .turner-img {
     padding-top: 9%;
     padding-bottom: 9%;
-    padding-left: 21.5rem;
+    padding-left: 10rem;
   }
   .head--box {
-    padding-top: 14%;
+    padding-top: 19%;
+    padding-left: 15%;
   }
   .head-system {
     font-size: 3.5em;
-    padding-top: 2.1em;
   }
   .dark_accents {
     font-size: 1.8em;
@@ -1201,6 +1143,300 @@ footer{
   }
   .head-sound {
     font-size: 3.5em;
+  }
+  footer {
+    background-color: #2d3540;
+  }
+  .text-muted {
+    font-size: 1.5em;
+    padding-top: 4%;
+    padding-left: 3em;
+    width: 120%;
+  }
+  .text-muted a {
+    padding-top: 0em;
+  }
+  .text-muted p {
+    padding: 0;
+    margin: 0;
+  }
+  .fb-size {
+    min-width: 2em;
+  }
+  .twitter-size {
+    min-width: 2em;
+  }
+  .icons {
+    display: inline-block;
+    padding-top: 1.5em;
+  }
+  footer > .list-unstyled {
+    padding-bottom: 0;
+  }
+}
+/* landscape  ipad*/
+@media only screen and (min-width: 992px) {
+  a > .logo {
+    padding-top: 2em;
+    padding-bottom: 2.1em;
+    padding-left: 2.2em;
+    display: block;
+    min-width: 90%;
+    height: auto;
+  }
+  .nav {
+    float: right;
+    padding-top: 2.3em;
+  }
+  .nav li a {
+    font-family: 'DINCondensed-Regular';
+    color: #494949;
+    font-weight: 400;
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    width: 5em;
+  }
+  .nav > li:nth-child(1) {
+    box-sizing: border-box;
+    border-bottom: 0;
+    width: 0;
+    padding: 0 2.5em 0 2.5em;
+  }
+  .nav > li:nth-child(2) {
+    box-sizing: border-box;
+    border-bottom: 0;
+    width: 0;
+    padding: 0 2.5em 0 2.5em;
+  }
+  .nav > li:nth-child(3) {
+    box-sizing: border-box;
+    border-bottom: 0;
+    width: 0;
+    padding: 0 2.5em 0 4em;
+  }
+  .nav > li:nth-child(4) {
+    box-sizing: border-box;
+    border-bottom: 0;
+    width: 0;
+    padding: 0 2.5em 0 2.5em;
+  }
+  .header_img {
+    background: url('../../img/bg1_ipad.png');
+    -moz-background-size: 100% ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: inline-block;
+  }
+  .thumb {
+    padding-top: 19%;
+    padding-bottom: 19%;
+  }
+  .place-pic {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4%;
+  }
+  .place_thumb3 {
+    padding-left: 7%;
+    padding-top: 10%;
+  }
+  .headline {
+    font-size: 2.5em;
+    color: #fff;
+    letter-spacing: 0.03em;
+    width: 130%;
+  }
+  .head-text {
+    color: #fff;
+    letter-spacing: 0.03em;
+    width: 130%;
+  }
+  .turner {
+    font-family: 'seagle';
+    font-size: 1.6em;
+    color: #acd15f;
+  }
+  .mk {
+    font-size: 1.6em;
+    color: #9b9b9d;
+  }
+  .instant {
+    font-size: 1.4em;
+    color: #fff;
+  }
+  .placer {
+    padding-top: 2em;
+    margin-left: 4%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+  }
+  .mk2 {
+    width: 100%;
+    height: auto;
+    padding-right: 30%;
+  }
+  .monster {
+    min-height: 62em;
+    background-color: #fff;
+  }
+  .multimonster {
+    padding-bottom: 3em;
+  }
+  .loop {
+    padding-top: 0.5em;
+    font-size: 4.2em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  .loop2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .multimonster {
+    padding-bottom: 3em;
+  }
+  .middle img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head-tool {
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0.6em;
+  }
+  .head-remix {
+    padding-top: 19%;
+    padding-left: 6em;
+  }
+  .play {
+    margin-left: 8%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+  }
+  .watch {
+    padding-top: 0.5em;
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 0.03em;
+  }
+  .turner_remix {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    font-family: 'seagle';
+    font-size: 1em;
+    color: #acd15f;
+  }
+  .list-rmx {
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    width: 80%;
+  }
+  .place-remix {
+    padding-top: 9%;
+    padding-bottom: 9%;
+    display: flex;
+    display: -webkit-box;
+    dipslay: -ms-flexbox;
+  }
+  .place-right {
+    padding-right: 5%;
+  }
+  .thumb2 {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .the_unit {
+    background-color: #fff;
+    width: 100%;
+  }
+  .headline_unit {
+    font-size: 2.4em;
+    padding-top: 24%;
+    padding-left: 1em;
+  }
+  .the_unit_text {
+    font-size: 1.2em;
+    padding-left: 2em;
+  }
+  .the_unit_text li {
+    line-height: 1.2em;
+    color: #000;
+  }
+  .thumb_playground {
+    padding-right: 5%;
+  }
+  .turner-place {
+    padding-left: 5%;
+  }
+  .turner-head {
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+  }
+  .list-turner {
+    padding-top: 1.3em;
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .list-turner li {
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  .list-turner1 {
+    padding-top: 4.4em;
+    color: #fff;
+    font-size: 1.5em;
+    padding-left: 0.5em;
+  }
+  .list-turner1 li {
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  .buy-turner {
+    width: 100%;
+    background-color: #fff;
+  }
+  .package {
+    max-width: 100%;
+    height: auto;
+  }
+  .turner-img {
+    padding-top: 9%;
+    padding-bottom: 9%;
+    padding-left: 10rem;
+  }
+  .head--box {
+    padding-top: 19%;
+    width: 110%;
+    padding-left: 10%;
+  }
+  .head-system {
+    font-size: 2.9em;
+  }
+  .dark_accents {
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+  }
+  .list-system {
+    font-size: 1.2em;
+    padding-left: 0;
+    line-height: 1em;
+  }
+  .head-sound {
+    font-size: 2.8em;
   }
   footer {
     background-color: #2d3540;
@@ -1417,18 +1653,19 @@ footer{
   #overview {
     height: 41.55em;
   }
+  .turner-place {
+    padding-left: 5%;
+  }
   .turner-head {
     font-size: 3.5em;
     color: #fff;
     text-transform: uppercase;
-    padding-left: 2em;
     padding-top: 1em;
   }
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
     font-size: 1.5em;
-    padding-left: 1.1em;
   }
   .list-turner li {
     line-height: 1.2em;
@@ -1451,10 +1688,11 @@ footer{
   .turner-img {
     padding-top: 9%;
     padding-bottom: 9%;
-    padding-left: 21.5rem;
+    padding-left: 15.5rem;
   }
   .head--box {
-    padding-top: 16%;
+    padding-top: 19%;
+    padding-left: 10%;
   }
   .head-system {
     font-size: 3.8em;
@@ -1685,18 +1923,19 @@ footer{
     padding-top: 21%;
     padding-bottom: 21%;
   }
+  .turner-place {
+    padding-left: 5%;
+  }
   .turner-head {
     font-size: 3.5em;
     color: #fff;
     text-transform: uppercase;
-    padding-left: 2em;
     padding-top: 1.5em;
   }
   .list-turner {
     padding-top: 1.3em;
     color: #fff;
     font-size: 1.5em;
-    padding-left: 1.1em;
   }
   .list-turner li {
     line-height: 1.2em;
@@ -1719,10 +1958,11 @@ footer{
   .turner-img {
     padding-top: 9%;
     padding-bottom: 9%;
-    padding-left: 21.5rem;
+    padding-left: 15.5rem;
   }
   .head--box {
-    padding-top: 16%;
+    padding-top: 19%;
+    padding-left: 10%;
   }
   .head-system {
     font-size: 3.8em;
