@@ -280,6 +280,14 @@ footer .list-unstyled {
     position: relative;
     width: 100%;
   }
+  .logo--imprint {
+    padding-top: 2.1em;
+    padding-bottom: 0.5em;
+    display: block;
+    max-width: 70%;
+    width: 70%;
+    height: auto;
+  }
   .impress--bg {
     background-color: #fff;
   }
