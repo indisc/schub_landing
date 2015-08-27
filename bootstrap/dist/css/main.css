@@ -1564,7 +1564,7 @@ footer .list-unstyled {
   }
   .list-system {
     font-size: 1.3em;
-    line-height: 1em;
+    line-height: 1.2em;
   }
   .turner-img {
     padding-top: 11%;
@@ -1847,14 +1847,14 @@ footer .list-unstyled {
   }
   .turner-img {
     padding-top: 7%;
-    margin-left: 19.3%;
+    margin-left: 17.3%;
   }
   .package {
     max-width: 100%;
   }
   .head--box {
-    padding-top: 26%;
-    padding-left: 5%;
+    padding-top: 20%;
+    padding-left: 10%;
   }
   .text-muted {
     padding-top: 4%;
