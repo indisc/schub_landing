@@ -1,0 +1,5 @@
+# Ignore any file 
+sftp-config.json
+
+*.public
+
