@@ -277,7 +277,30 @@ h1, .headline{
     text-transform: uppercase;
     margin-top: 5%;
 }
+
+
+//turner comes with
 .place-remix{
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+}
+
+.link--description{
+    font-size: 1.4em;
+    color: white;
+    padding-left: 1em;
+
+}
+.play{
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+}
+
+.play-tutorial{
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,6 +726,19 @@ and (min-width: 320px){
             li:nth-child(11){
                 padding-bottom: 0.6em;
             }
+    }
+
+    .link--description{
+            font-size: 1.4em;
+            color: white;
+            padding-left: 1em;
+            padding-top: 0.3em;
+        }
+
+    .play-tutorial{
+        padding-top: 1em;
+        margin-left: 1.8em;
+        min-width: 80%;
     }
 
     //////////////////// Buy Turner /////////////////////////    
@@ -1343,22 +1379,34 @@ and (min-width: 360px){
     .turner-place{
         padding-left: 9%;
     }
-            .list-turner{
-            font-size: 1.2em;
-            line-height: 1.9em;
-                li:nth-child(1),
-            li:nth-child(2),
-            li:nth-child(3),
-            li:nth-child(4),
-            li:nth-child(6),
-            li:nth-child(7),
-            li:nth-child(8),
-            li:nth-child(9),
-            li:nth-child(10),
-            li:nth-child(11){
-                padding-bottom: 0em;
+    .list-turner{
+        font-size: 1.2em;
+        line-height: 1.9em;
+        li:nth-child(1),
+        li:nth-child(2),
+        li:nth-child(3),
+        li:nth-child(4),
+        li:nth-child(6),
+        li:nth-child(7),
+        li:nth-child(8),
+        li:nth-child(9),
+        li:nth-child(10),
+        li:nth-child(11)
+            {
+            padding-bottom: 0em;
             }
         }
+
+        .play-tutorial{
+        padding-top: 1em;
+        margin-left: 1.8em;
+
+    }  
+
+    .turner--tutorial{
+        max-width: 60%;
+    }
+
 
     ///////////buy tuner///////////
     .head--box{
@@ -1502,6 +1550,15 @@ and (min-width: 360px){
         }
         .thumb_playground{
             margin-left: 0;
+        }
+
+        .play-tutorial{
+            padding-top: 16em;
+            width: 40%;
+
+        }
+        .link--description{
+            padding-top: 0.3em;
         }
 
         /////////Buy Turner ////////
@@ -1662,6 +1719,16 @@ and (min-width: 360px){
             }
         }
 
+        .play-tutorial{
+            padding-top: 16em;
+            width: 40%;
+
+        }
+        .link--description{
+            padding-top: 0.3em;
+        }
+
+
         
         /////////buy turner //////////
         .buy-turner{
@@ -1721,6 +1788,14 @@ and (min-width: 360px){
         //////////// turner comes //////////////
         #third_bg_img{
             height: 40em;
+        }
+        .play-tutorial{
+            padding-top: 16em;
+            width: 40%;
+
+        }
+        .link--description{
+            padding-top: 0.3em;
         }
         /////////// turner buy /////////////
         .head--box{
@@ -1915,7 +1990,7 @@ and (min-width: 360px){
         .turner-place{
             padding-top: 2%;
             padding-bottom: 0%;
-            padding-left: 10%;
+            padding-left: 8.5%;
         }
         .turner-head{
             padding-top: 2.5%;
@@ -1936,6 +2011,14 @@ and (min-width: 360px){
             li:nth-child(11){
                 padding-bottom: 0em;
             }
+        }
+        .play-tutorial{
+            padding-top: 18em;
+            width: 40%;
+            padding-left: 4%;
+        }
+        .link--description{
+            padding-top: 0.3em;
         }
         //////////// buy Turner ///////////
         .buy-turner{
@@ -2008,6 +2091,11 @@ and (min-width: 360px){
                 padding-bottom: 0.2em;
             }
         }
+
+        .turner-play{
+            padding-left: 3em;
+            padding-top: 19em;
+        }
     }
 
         //////////////////////////////////////////////////////////////////////
@@ -2066,6 +2154,14 @@ and (min-width: 360px){
     ////// turner comes with ////////
     .turner-place{
         padding-left: 13.5%;
+    }
+
+    .play-tutorial{
+        padding-top: 18em;
+        width: 40%;
+    }
+    .link--description{
+        padding-top: 0.3em;
     }
     /////////////// buy turner ////////////////
     .buy-turner{
@@ -2183,6 +2279,14 @@ and (min-width: 360px){
             line-height: 1.5em;
         }
 
+        .play-tutorial{
+            padding-top: 18em;
+            width: 40%;
+        }
+        .link--description{
+            padding-top: 0.3em;
+        }
+
 
 
 
@@ -2249,6 +2353,14 @@ and (min-width: 360px){
 
         .turner-place{
             padding-left: 12.8%;
+        }
+
+        .play-tutorial{
+            padding-top: 18em;
+            width: 40%;
+        }
+        .link--description{
+            padding-top: 0.3em;
         }
         
         //// Buy Turner /////
@@ -2351,8 +2463,35 @@ and (min-width: 360px){
             min-height: 51em;
         }
         .turner-place{
-            padding-top: 1%;
-            padding-left: 14.5%;
+            padding-top: 3%;
+            padding-left: 14%;
+        }
+        
+        .turner-play{
+            padding-top: 18em;
+            width: 140%;
+        }
+        .play{
+            display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                align-items: center;
+        }
+
+        .play-tutorial{
+            padding-top: 18em;
+            width: 40%;
+        }
+
+        .turner--tutorial{
+
+        }
+
+        .link--description{
+            font-size: 2em;
+            color: white;
+            padding-left: 1em;
+            padding-top: 0.3em;
         }
 
         .turner-head{

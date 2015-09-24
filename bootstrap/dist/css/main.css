@@ -180,6 +180,23 @@ h1,
   display: -ms-flexbox;
   align-items: center;
 }
+.link--description {
+  font-size: 1.4em;
+  color: white;
+  padding-left: 1em;
+}
+.play {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+}
+.play-tutorial {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+}
 .watch {
   color: #ffffff;
   letter-spacing: 0.03em;
@@ -513,6 +530,17 @@ footer .list-unstyled {
   .list-turner li:nth-child(10),
   .list-turner li:nth-child(11) {
     padding-bottom: 0.6em;
+  }
+  .link--description {
+    font-size: 1.4em;
+    color: white;
+    padding-left: 1em;
+    padding-top: 0.3em;
+  }
+  .play-tutorial {
+    padding-top: 1em;
+    margin-left: 1.8em;
+    min-width: 80%;
   }
   .turner-img {
     min-width: 100%;
@@ -1064,6 +1092,13 @@ footer .list-unstyled {
   .list-turner li:nth-child(11) {
     padding-bottom: 0em;
   }
+  .play-tutorial {
+    padding-top: 1em;
+    margin-left: 1.8em;
+  }
+  .turner--tutorial {
+    max-width: 60%;
+  }
   .head--box {
     min-width: 110%;
     margin-left: 59%;
@@ -1188,6 +1223,13 @@ footer .list-unstyled {
   }
   .thumb_playground {
     margin-left: 0;
+  }
+  .play-tutorial {
+    padding-top: 16em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
   }
   .package {
     margin-left: 0;
@@ -1321,6 +1363,13 @@ footer .list-unstyled {
   .list-turner li:nth-child(11) {
     padding-bottom: 0em;
   }
+  .play-tutorial {
+    padding-top: 16em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
+  }
   .buy-turner {
     min-height: 38em;
   }
@@ -1364,6 +1413,13 @@ footer .list-unstyled {
   }
   #third_bg_img {
     height: 40em;
+  }
+  .play-tutorial {
+    padding-top: 16em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
   }
   .head--box {
     padding-top: 22%;
@@ -1530,7 +1586,7 @@ footer .list-unstyled {
   .turner-place {
     padding-top: 2%;
     padding-bottom: 0%;
-    padding-left: 10%;
+    padding-left: 8.5%;
   }
   .turner-head {
     padding-top: 2.5%;
@@ -1551,6 +1607,14 @@ footer .list-unstyled {
   .list-turner li:nth-child(10),
   .list-turner li:nth-child(11) {
     padding-bottom: 0em;
+  }
+  .play-tutorial {
+    padding-top: 18em;
+    width: 40%;
+    padding-left: 4%;
+  }
+  .link--description {
+    padding-top: 0.3em;
   }
   .buy-turner {
     min-height: 42em;
@@ -1612,6 +1676,10 @@ footer .list-unstyled {
     margin: 0;
     padding-bottom: 0.2em;
   }
+  .turner-play {
+    padding-left: 3em;
+    padding-top: 19em;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .header_img {
@@ -1652,6 +1720,13 @@ footer .list-unstyled {
   }
   .turner-place {
     padding-left: 13.5%;
+  }
+  .play-tutorial {
+    padding-top: 18em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
   }
   .buy-turner {
     height: 42em;
@@ -1746,6 +1821,13 @@ footer .list-unstyled {
   .list-turner {
     line-height: 1.5em;
   }
+  .play-tutorial {
+    padding-top: 18em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
+  }
   .buy-turner {
     height: 45em;
   }
@@ -1787,6 +1869,13 @@ footer .list-unstyled {
   }
   .turner-place {
     padding-left: 12.8%;
+  }
+  .play-tutorial {
+    padding-top: 18em;
+    width: 40%;
+  }
+  .link--description {
+    padding-top: 0.3em;
   }
   .package {
     max-width: 65%;
@@ -1861,8 +1950,28 @@ footer .list-unstyled {
     min-height: 51em;
   }
   .turner-place {
-    padding-top: 1%;
-    padding-left: 14.5%;
+    padding-top: 3%;
+    padding-left: 14%;
+  }
+  .turner-play {
+    padding-top: 18em;
+    width: 140%;
+  }
+  .play {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+  }
+  .play-tutorial {
+    padding-top: 18em;
+    width: 40%;
+  }
+  .link--description {
+    font-size: 2em;
+    color: white;
+    padding-left: 1em;
+    padding-top: 0.3em;
   }
   .turner-head {
     padding-top: 4%;

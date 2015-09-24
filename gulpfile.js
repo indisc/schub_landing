@@ -1,12 +1,13 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var livereload = require('gulp-livereload');
+//var livereload = require('gulp-livereload');
+var browserSync = require('browser-sync').create();
 var connect = require('gulp-connect');
 var minifyCss = require('gulp-minify-css');
 var imageop = require('gulp-image-optimization');
 var autoprefixer = require('gulp-autoprefixer');
 
-
+/*
 //gulp webserver
 gulp.task('webserver', function(){
 	connect.server({
@@ -14,13 +15,23 @@ gulp.task('webserver', function(){
 		livereload: true
 	});
 });
+*/
+
+gulp.task('webserver', ['less'], function(){
+	browserSync.init({
+		server: '../schub_landing/'
+	});
+	gulp.watch('*.html').on('change', browserSync.reload);
+	gulp.watch('bootstrap/less/*.less', ['less']);
+});
 
 //gulp less
 gulp.task('less', function(){
 	return gulp.src('bootstrap/less/main.less')
 		.pipe(less())
 		.pipe(gulp.dest('bootstrap/dist/css/'))
-		.pipe(connect.reload());
+		.pipe(browserSync.stream());
+		//.pipe(connect.reload());
 });
 
 gulp.task('default', function(){
