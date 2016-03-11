@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
-/*143*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -212,6 +211,19 @@ h1,
 }
 .list-turner .li {
   letter-spacing: 0.03em;
+}
+.turner--tutorial {
+  display: flex;
+  justify-content: center;
+}
+.img-tutorial {
+  margin-left: 40%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.link--description {
+  color: white;
+  font-size: 1.3em;
 }
 .buy-turner {
   width: 100%;
@@ -577,6 +589,18 @@ footer .list-unstyled {
   .place-pic {
     margin-bottom: 5%;
   }
+  .turner--tutorial {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-tutorial {
+    margin-left: 10%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .link--description {
+    color: white;
+  }
 }
 @media only screen and (min-width: 360px) {
   a > .logo {
@@ -936,6 +960,19 @@ footer .list-unstyled {
   .list-system {
     line-height: 1.3em;
   }
+  .turner--tutorial {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-tutorial {
+    margin-left: 10%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .link--description {
+    color: white;
+    font-size: 150%;
+  }
   .text-muted {
     max-width: 80%;
     margin: 0 auto;
@@ -948,6 +985,8 @@ footer .list-unstyled {
     padding-left: 2.2em;
   }
   .nav {
+    display: flex;
+    justify-content: space-around;
     float: right;
     padding-top: 8%;
   }
@@ -956,10 +995,11 @@ footer .list-unstyled {
     color: #494949;
     font-size: 1.2em;
     letter-spacing: 0.02em;
-    width: 4em;
-  }
-  .nav > li:nth-child(2) {
+    padding: 0;
     padding-right: 1em;
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #00a5a9;
   }
   iframe {
     max-width: 98%;
@@ -969,7 +1009,7 @@ footer .list-unstyled {
     max-width: 50%;
     max-width: 45em;
     height: 33em;
-    margin-left: 4.5%;
+    margin-left: 10.5%;
   }
   .header_img {
     background: url('../../img/bg1_ipad_portrait.png');
@@ -1064,6 +1104,9 @@ footer .list-unstyled {
   .list-turner li:nth-child(10),
   .list-turner li:nth-child(11) {
     padding-bottom: 0em;
+  }
+  .link--description {
+    margin-bottom: 2em;
   }
   .head--box {
     min-width: 110%;
@@ -1177,7 +1220,7 @@ footer .list-unstyled {
     min-width: 100%;
   }
   .turner-place {
-    min-width: 100%;
+    min-width: 95%;
     padding-left: 7%;
   }
   .turner-head {
@@ -1305,6 +1348,7 @@ footer .list-unstyled {
   .turner-place {
     padding-top: 5%;
     padding-bottom: 5%;
+    display: flex;
   }
   .list-turner {
     font-size: 1.2em;
@@ -1322,6 +1366,35 @@ footer .list-unstyled {
   .list-turner li:nth-child(11) {
     padding-bottom: 0em;
   }
+  .turner--tutorial {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-tutorial {
+    margin-left: 40%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .link--description {
+    color: white;
+    font-size: 1.3em;
+  }
+
+
+
+  .play-tutorial:not(*:root) {
+    margin-top: 15em;
+    margin-bottom: 1em;
+    padding-left: 3em;
+  }
+
+  .link--description:not(*:root){
+    margin-top: 1em;
+  }
+
+
   .buy-turner {
     min-height: 38em;
   }
@@ -1389,6 +1462,16 @@ footer .list-unstyled {
     min-width: 85%;
     max-width: 0;
   }
+
+  .play-tutorial:not(*:root) {
+    margin-top: 12em;
+    margin-bottom: 1em;
+    padding-left: 3em;
+  }
+
+  .link--description:not(*:root){
+    margin-top: 1em;
+  }
 }
 @media only screen and (min-width: 1280px) {
   a > .logo {
@@ -1403,7 +1486,7 @@ footer .list-unstyled {
     max-width: 95%;
     max-width: 65em;
     height: 45em;
-    margin-left: 1%;
+    margin-left: 15%;
   }
   .nav {
     padding-top: 5%;
@@ -1564,7 +1647,7 @@ footer .list-unstyled {
   }
   .list-system {
     font-size: 1.3em;
-    line-height: 1.2em;
+    line-height: 1em;
   }
   .turner-img {
     padding-top: 11%;
@@ -1591,6 +1674,12 @@ footer .list-unstyled {
   }
   .head--box {
     padding-top: 22%;
+  }
+
+  .play-tutorial:not(*:root) {
+    margin-top: 16em;
+    margin-bottom: 1em;
+    padding-left: 7em;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1836,8 +1925,21 @@ footer .list-unstyled {
     min-height: 51em;
   }
   .turner-place {
-    padding-top: 1%;
+    padding-top: 2%;
     padding-left: 11.5%;
+  }
+
+  .turner-place:not(*:root){
+    padding-top: 3%;
+  }
+  .link--description:not(*:root){
+    font-size: 1.8em;
+  }
+
+  .play-tutorial:not(*:root) {
+    margin-top: 18em;
+    margin-bottom: 1em;
+    padding-left: 3em;
   }
   .turner-head {
     padding-top: 4%;
@@ -1847,14 +1949,14 @@ footer .list-unstyled {
   }
   .turner-img {
     padding-top: 7%;
-    margin-left: 17.3%;
+    margin-left: 19.3%;
   }
   .package {
     max-width: 100%;
   }
   .head--box {
-    padding-top: 20%;
-    padding-left: 10%;
+    padding-top: 26%;
+    padding-left: 5%;
   }
   .text-muted {
     padding-top: 4%;
@@ -1863,3 +1965,4 @@ footer .list-unstyled {
     padding-top: 2%;
   }
 }
+/*143*/
